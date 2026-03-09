@@ -1,0 +1,251 @@
+/* Layout.module.css — Workmate nav shell */
+
+.root {
+  min-height: 100vh;
+  background: #0b0c0e;
+  color: #f0ede6;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+}
+
+/* ── GRID BG ── */
+.grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(212,240,96,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212,240,96,0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ── NAV ── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  background: rgba(11,12,14,0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.navScrolled {
+  background: rgba(11,12,14,0.92);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+}
+
+.navBtnBlue {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.navBtnBlue:hover {
+  background: #eff6ff;
+}
+
+/* ── LOGO ── */
+
+/* .logoRow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+} */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  color: #e8e6f0;
+  transition: opacity 0.2s;
+}
+.logo:hover { opacity: 0.8; }
+
+.logoMark {
+  width: 28px; height: 24px;
+  background:#3b82f6;
+  color: #0b0c0e;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: 'Bebas Neue', sans-serif;
+  flex-shrink: 0;
+  margin-top: -.9rem;
+}
+
+.logoWord { margin-top: 0.1rem; margin-left: .1rem; font-size: .8rem;  }
+
+/* ── DESKTOP LINKS ── */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.navBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.42rem 0.85rem;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.07);
+  background: transparent;
+  color: rgba(240,237,230,0.5);
+  transition: color 0.18s, background 0.18s, border-color 0.18s, box-shadow 0.18s;
+  white-space: nowrap;
+}
+
+.navBtn:hover {
+  color: #f0ede6;
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.16);
+}
+
+.navBtnActive {
+  background: #d4f060 !important;
+  color: #0b0c0e !important;
+  border-color: #d4f060 !important;
+  box-shadow: 0 0 18px rgba(212,240,96,0.3);
+}
+
+.navBtnDanger {
+  color: rgba(255,107,107,0.7);
+  border-color: rgba(255,107,107,0.2);
+}
+.navBtnDanger:hover {
+  background: rgba(255,107,107,0.1) !important;
+  color: #ff6b6b !important;
+  border-color: rgba(255,107,107,0.4) !important;
+}
+
+.navIcon {
+  font-style: normal;
+  font-size: 0.78rem;
+  opacity: 0.75;
+}
+
+/* ── HAMBURGER ── */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px; height: 36px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  transition: background 0.2s;
+}
+.burger:hover { background: rgba(255,255,255,0.1); }
+.burger span {
+  display: block;
+  height: 1.5px;
+  background: #f0ede6;
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+  transform-origin: center;
+}
+.burgerOpen span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.burgerOpen span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.burgerOpen span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ── MOBILE DRAWER ── */
+.drawer {
+  position: fixed;
+  top: 57px; left: 0; right: 0;
+  z-index: 40;
+  background: rgba(11,12,14,0.97);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+  opacity: 0;
+}
+.drawerOpen {
+  max-height: 480px;
+  opacity: 1;
+}
+
+.drawerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.drawerBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid transparent;
+  color: rgba(240,237,230,0.55);
+  cursor: pointer;
+  transition: all 0.18s;
+  width: 100%;
+  text-align: left;
+}
+.drawerBtn:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.1);
+  color: #f0ede6;
+}
+.drawerBtnActive {
+  background: rgba(212,240,96,0.12) !important;
+  border-color: rgba(212,240,96,0.3) !important;
+  color: #d4f060 !important;
+}
+.drawerBtnDanger { color: rgba(255,107,107,0.6); }
+.drawerBtnDanger:hover {
+  background: rgba(255,107,107,0.08) !important;
+  color: #ff6b6b !important;
+}
+
+/* ── MAIN CONTENT ── */
+.main {
+  position: relative;
+  z-index: 1;
+  padding-top: 57px; /* nav height */
+  min-height: 100vh;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .links { display: none; }
+  .burger { display: flex; }
+  .nav { padding: 0.85rem 1.25rem; }
+}
