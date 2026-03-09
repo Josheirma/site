@@ -37,7 +37,7 @@ const colStyle    = { width: "180px", display: "flex", flexDirection: "column", 
 
 export default function Home() {
   return (
-    <div style={{ padding: "40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "40px" }}>
+    <div style={{ padding: "40px", display: "flex", flexDirection: "column", alignItems: "center", gap: "40px", overflow: "hidden"  }}>
 
       {/* Title */}
       <div style={{ fontSize: "24px", fontWeight: "bold", marginTop: ".0rem", marginBottom: ".8rem" }}>Super Easy Employee Scheduler</div>
