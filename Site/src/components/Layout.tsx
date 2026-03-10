@@ -35,16 +35,13 @@ export default function Layout() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [scrolled,  setScrolled]  = useState(false);
-  const [menuOpen,  setMenuOpen]  = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  useEffect(() => { setMenuOpen(false); }, [location.pathname]);
 
   return (
     <div className={styles.root}>
@@ -62,7 +59,7 @@ export default function Layout() {
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <span className={styles.logoMark}>S</span>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-              <span>Simplistics Inc.</span>
+              <span className={styles.company}>Simplistics Inc.</span>
               <span className={styles.logoWord}>Workmate ©</span>
             </div>
           </div>
@@ -74,28 +71,7 @@ export default function Layout() {
           <a href="/download" className={styles.navBtnBlue}>Download</a>
         </nav>
 
-        {/* Burger */}
-        <button
-          className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ''}`}
-          onClick={() => setMenuOpen(v => !v)}
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={menuOpen}
-        >
-          <span /><span /><span />
-        </button>
-
       </header>
-
-      {/* Mobile drawer */}
-      <div
-        className={`${styles.drawer} ${menuOpen ? styles.drawerOpen : ''}`}
-        aria-hidden={!menuOpen}
-      >
-        <nav className={styles.drawerLinks}>
-          <a href="/purchase" className={styles.drawerBtn}>Purchase</a>
-          <a href="/download" className={styles.drawerBtn}>Download</a>
-        </nav>
-      </div>
 
       {/* Page content */}
       <main className={styles.main}>
@@ -105,9 +81,37 @@ export default function Layout() {
       {/* Footer */}
       <footer style={{ padding: "0 60px 32px" }}>
 
+        <style>{`
+          .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+          }
+
+          @media (max-width: 420px) {
+            .footer-outer {
+              padding: 0 16px 24px !important;
+            }
+
+            .footer-grid {
+              grid-template-columns: repeat(2, 1fr);
+              grid-template-rows: auto auto;
+              gap: 28px 20px;
+            }
+
+            /* Row 1: Product | Support */
+            .footer-grid > div:nth-child(1) { grid-column: 1; grid-row: 1; }
+            .footer-grid > div:nth-child(2) { grid-column: 2; grid-row: 1; }
+            /* Row 2: Company | Legal */
+            .footer-grid > div:nth-child(3) { grid-column: 1; grid-row: 2; }
+            .footer-grid > div:nth-child(4) { grid-column: 2; grid-row: 2; }
+          }
+        `}</style>
+
         <div style={{ borderTop: "1px solid #333", marginBottom: "2rem", marginTop: "2.4rem" }} />
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "40px", marginBottom: "40px" }}>
+        <div className="footer-grid">
           {Object.entries(footerLinks).map(([section, items]) => (
             <div key={section} style={{ display: "flex", flexDirection: "column" }}>
               <h4 style={{ color: "white", margin: "0 0 12px", fontSize: "13px", fontWeight: "600", letterSpacing: "0.05em" }}>
@@ -125,7 +129,6 @@ export default function Layout() {
         </div>
 
         <span style={{ color: "#555", fontSize: "12px" }}>© 2025 Simplistics Inc. All rights reserved, WorkMate.</span>
-        
 
       </footer>
     </div>

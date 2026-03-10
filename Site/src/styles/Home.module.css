@@ -1,0 +1,148 @@
+.homeWrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 0.8rem;
+}
+
+.titleWord {
+  display: inline;
+}
+
+/* ── Feature grid ── */
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featureHeading {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.featurePara {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #aaa;
+}
+
+/* ── Divider ── */
+.divider {
+  width: 100%;
+  max-width: 900px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ── Left col / Right col rows ── */
+.sideCol {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+}
+
+.sideItem {
+  flex: 1;
+  max-width: 380px;
+}
+
+/* ── Image row ── */
+.panDragWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* ── 420px breakpoint ── */
+@media (max-width: 420px) {
+  .homeWrapper {
+    padding: 20px 12px;
+    gap: 28px;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .featureGrid > div {
+    width: 100%;
+  }
+
+  .sideCol {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sideItem {
+    max-width: 100%;
+  }
+
+  .panDragWrapper {
+    display: none;
+  }
+}
+
+/* ── 320px breakpoint ── */
+@media (max-width: 320px) {
+  .homeWrapper {
+    padding: 16px 8px;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titleWord {
+    display: block;
+  }
+
+  .sideCol {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .sideItem {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .panDragWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
