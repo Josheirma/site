@@ -105,12 +105,12 @@
   }
 
   .panDragWrapper {
-    display: none;
+    
   }
 }
 
 /* ── 320px breakpoint ── */
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .homeWrapper {
     padding: 16px 8px;
     gap: 24px;
@@ -146,4 +146,4 @@
     justify-content: center;
     width: 100%;
   }
-}
+} */
