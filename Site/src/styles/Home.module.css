@@ -1,16 +1,16 @@
 .homeWrapper {
-  padding: 40px;
+  padding: 16px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
   overflow: hidden;
 }
 
 .title {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 9rem;
+  margin-top: 4rem;
   margin-bottom: 0.8rem;
 }
 
@@ -22,9 +22,12 @@
 /* ── Feature grid ── */
 .featureGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  max-width: 900px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.featureGrid > div {
   width: 100%;
 }
 
@@ -32,6 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  text-align: center;
 }
 
 .featureHeading {
@@ -39,6 +43,7 @@
   font-size: 13px;
   font-weight: 600;
   color: white;
+  text-align: center;
 }
 
 .featurePara {
@@ -57,17 +62,17 @@
 
 /* ── Left col / Right col rows ── */
 .sideCol {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
   width: 100%;
-  justify-content: center;
+  max-width: 600px;
+  justify-items: center;
 }
 
 .sideItem {
-  flex: 1;
-  max-width: 380px;
+  width: 100%;
+  text-align: center;
 }
 
 /* ── Image row ── */
@@ -75,75 +80,56 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
 }
 
-/* ── 420px breakpoint ── */
-@media (max-width: 420px) {
+/* ── 421px and up ── */
+@media (min-width: 421px) {
   .homeWrapper {
     padding: 20px 12px;
     gap: 28px;
   }
 
   .featureGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
+    gap: 24px;
+    max-width: 900px;
   }
 
   .featureGrid > div {
-    width: 100%;
+    width: auto;
   }
 
   .sideCol {
-    flex-direction: column;
     gap: 20px;
   }
 
   .sideItem {
-    max-width: 100%;
-  }
-
-  .panDragWrapper {
-    
+    text-align: left;
   }
 }
 
-/* ── 320px breakpoint ── */
-/* @media (max-width: 320px) {
+/* ── Desktop ── */
+@media (min-width: 900px) {
   .homeWrapper {
-    padding: 16px 8px;
-    gap: 24px;
-    align-items: center;
+    padding: 40px;
+    gap: 40px;
   }
 
   .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    
   }
 
-  .titleWord {
-    display: block;
+  .featureGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .sideCol {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    width: 100%;
+    gap: 40px;
   }
 
   .sideItem {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
+    max-width: 380px;
   }
-
-  .panDragWrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-} */
+}
