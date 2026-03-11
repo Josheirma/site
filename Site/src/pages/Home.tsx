@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import PanAndDrag from '../components/PanAndDrag';
 import styles from '../styles/Home.module.css';
 
@@ -20,7 +20,28 @@ const rightCol = [
   { title: "Flexible by design", text: "Each employee supports multiple shifts. The employee list stays fixed while the schedule grid scrolls beneath it." },
 ];
 
+
+
+
+
+
 export default function Home() {
+
+ useEffect(() => {
+  let lastWidth = window.innerWidth;
+
+  const log = () => {
+    const width = window.innerWidth;
+    if (width === lastWidth) return;
+    lastWidth = width;
+    console.log(`width: ${width}px  |  font-size: ${getComputedStyle(document.documentElement).fontSize}`);
+  };
+
+  window.addEventListener('resize', log);
+  return () => window.removeEventListener('resize', log);
+}, []);
+
+
   return (
     <div className={styles.homeWrapper}>
 

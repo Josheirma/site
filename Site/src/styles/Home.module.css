@@ -1,3 +1,10 @@
+    
+    html{
+        
+       font-size: clamp(16px, calc(16px + 20 * ((100vw - 400px) / 1200)), 56px);
+    }
+    
+
 .homeWrapper {
   padding: 16px 8px;
   display: flex;
@@ -5,12 +12,14 @@
   align-items: center;
   gap: 24px;
   overflow: hidden;
+  
+  
 }
 
 .title {
-  font-size: 24px;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 4rem;
+  margin-top: 10rem;
   margin-bottom: 0.8rem;
 }
 
@@ -24,7 +33,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 100%;
+  width: 95%;
 }
 
 .featureGrid > div {
@@ -40,7 +49,7 @@
 
 .featureHeading {
   margin: 0 0 4px;
-  font-size: 13px;
+  font-size: 1.125rem;
   font-weight: 600;
   color: white;
   text-align: center;
@@ -48,7 +57,7 @@
 
 .featurePara {
   margin: 0;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 1.7;
   color: #aaa;
 }
@@ -83,8 +92,16 @@
   max-width: 600px;
 }
 
-/* ── 421px and up ── */
-@media (min-width: 421px) {
+@media (max-width: 487px) {
+  .title{
+   margin-top: 18rem;
+  }
+}
+
+
+
+
+/* @media (min-width: 630px) {
   .homeWrapper {
     padding: 20px 12px;
     gap: 28px;
@@ -92,7 +109,6 @@
 
   .featureGrid {
     gap: 24px;
-    max-width: 900px;
   }
 
   .featureGrid > div {
@@ -106,11 +122,38 @@
   .sideItem {
     text-align: left;
   }
-}
+} */
+
+
+/* ── 421px and up ── */
+/* @media (min-width: 320px) {
+  .homeWrapper {
+    padding: 20px 12px;
+    gap: 28px;
+    
+  }
+
+  .featureGrid {
+    gap: 24px;
+   
+  }
+
+  .featureGrid > div {
+    width: auto;
+  }
+
+  .sideCol {
+    gap: 20px;
+  }
+
+  .sideItem {
+    text-align: left;
+  }
+} */
 
 /* ── Desktop ── */
-@media (min-width: 900px) {
-  .homeWrapper {
+@media (min-width: 692px) {
+  /* .homeWrapper {
     padding: 40px;
     gap: 40px;
   }
@@ -119,17 +162,17 @@
     margin-top: 1rem;
     margin-bottom: 0.8rem;
     
-  }
+  } */
 
   .featureGrid {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .sideCol {
+  /* .sideCol {
     gap: 40px;
   }
 
   .sideItem {
     max-width: 380px;
-  }
+  } */
 }
