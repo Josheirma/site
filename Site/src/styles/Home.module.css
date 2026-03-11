@@ -1,19 +1,14 @@
-    
-    html{
-        
-       font-size: clamp(16px, calc(16px + 20 * ((100vw - 400px) / 1200)), 56px);
-    }
-    
+html {
+  font-size: clamp(16px, calc(16px + 20 * ((100vw - 400px) / 1200)), 56px);
+}
 
 .homeWrapper {
-  padding: 16px 8px;
+  padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
   overflow: hidden;
-  
-  
 }
 
 .title {
@@ -32,7 +27,7 @@
 .featureGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   width: 95%;
 }
 
@@ -43,12 +38,12 @@
 .featureItem {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
   text-align: center;
 }
 
 .featureHeading {
-  margin: 0 0 4px;
+  margin: 0 0 0.25rem;
   font-size: 1.125rem;
   font-weight: 600;
   color: white;
@@ -65,17 +60,17 @@
 /* ── Divider ── */
 .divider {
   width: 100%;
-  max-width: 900px;
-  border-top: 1px solid #e0e0e0;
+  max-width: 56.25rem;
+  border-top: 0.0625rem solid #e0e0e0;
 }
 
 /* ── Left col / Right col rows ── */
 .sideCol {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 1rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   justify-items: center;
 }
 
@@ -89,90 +84,18 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
-@media (max-width: 487px) {
-  .title{
-   margin-top: 18rem;
+@media (max-width: 30.4375rem) {
+  .title {
+    margin-top: 18rem;
   }
 }
-
-
-
-
-/* @media (min-width: 630px) {
-  .homeWrapper {
-    padding: 20px 12px;
-    gap: 28px;
-  }
-
-  .featureGrid {
-    gap: 24px;
-  }
-
-  .featureGrid > div {
-    width: auto;
-  }
-
-  .sideCol {
-    gap: 20px;
-  }
-
-  .sideItem {
-    text-align: left;
-  }
-} */
-
-
-/* ── 421px and up ── */
-/* @media (min-width: 320px) {
-  .homeWrapper {
-    padding: 20px 12px;
-    gap: 28px;
-    
-  }
-
-  .featureGrid {
-    gap: 24px;
-   
-  }
-
-  .featureGrid > div {
-    width: auto;
-  }
-
-  .sideCol {
-    gap: 20px;
-  }
-
-  .sideItem {
-    text-align: left;
-  }
-} */
 
 /* ── Desktop ── */
-@media (min-width: 692px) {
-  /* .homeWrapper {
-    padding: 40px;
-    gap: 40px;
-  }
-
-  .title {
-    margin-top: 1rem;
-    margin-bottom: 0.8rem;
-    
-  } */
-
+@media (min-width: 43.25rem) {
   .featureGrid {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  /* .sideCol {
-    gap: 40px;
-  }
-
-  .sideItem {
-    max-width: 380px;
-  } */
 }
