@@ -1,5 +1,5 @@
 html {
-  font-size: clamp(16px, calc(16px + 20 * ((100vw - 400px) / 1200)), 56px);
+  font-size: clamp(16px, calc(16px + 20 * ((100vw - 400px) / 1200)), 38.276px);
 }
 
 .homeWrapper {
@@ -12,7 +12,7 @@ html {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 10rem;
   margin-bottom: 0.8rem;
@@ -27,7 +27,7 @@ html {
 .featureGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 1.5rem;
   width: 95%;
 }
 
@@ -87,15 +87,18 @@ html {
   max-width: 37.5rem;
 }
 
-@media (max-width: 30.4375rem) {
+/* @media (max-width: 30.4375rem) {
   .title {
     margin-top: 18rem;
   }
-}
+} */
 
 /* ── Desktop ── */
 @media (min-width: 43.25rem) {
   .featureGrid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .title{
+    margin-top: 6rem;
   }
 }
