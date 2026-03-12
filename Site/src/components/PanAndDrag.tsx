@@ -143,7 +143,9 @@ export default function PanAndDrag() {
       <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
         {images.map((_, i) => (
           <div key={i} onClick={() => setCurrentIndex(i)} style={{
-            width: i === currentIndex ? 24 : 8, height: 8, borderRadius: 4,
+            width: i === currentIndex ? "1rem" : ".5rem",
+            height: ".4rem",
+            borderRadius: 4,
             background: i === currentIndex ? "#6c63ff" : "rgba(255,255,255,0.3)",
             cursor: "pointer", transition: "all 0.3s ease",
           }} />
@@ -152,13 +154,13 @@ export default function PanAndDrag() {
 
       <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
         <button onClick={goLeft} style={btnStyle}>←</button>
-        <span style={{ color: "#aaa", fontSize: "12px", letterSpacing: "0.2em", fontFamily: "monospace", minWidth: 60, textAlign: "center" }}>
+        <span style={{ color: "#aaa", fontSize: " .7rem", letterSpacing: "0.2em", fontFamily: "monospace", minWidth: 60, textAlign: "center" }}>
           {String(currentIndex + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}
         </span>
         <button onClick={goRight} style={btnStyle}>→</button>
       </div>
 
-      <p style={{ color: "#aaa", fontSize: "11px", letterSpacing: "0.15em", fontFamily: "monospace", margin: 0 }}>
+      <p style={{ color: "#aaa", fontSize: " .7rem", letterSpacing: "0.15em", fontFamily: "monospace", margin: 0 }}>
         DRAG TO PAN
       </p>
     </div>
