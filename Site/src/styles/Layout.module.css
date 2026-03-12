@@ -114,7 +114,7 @@
   font-size: 1.125rem;
   color: #3b82f6;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
   border-radius: 0.25rem;
   transition: background 0.2s;
   white-space: nowrap;
