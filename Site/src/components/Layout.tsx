@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import styles from '../styles/Layout.module.css';
 
+
+
 const footerLinks = {
   Product: [
     { label: 'Home',      to: '/Home'     },
@@ -31,7 +33,14 @@ const footerLinks = {
 
 const linkStyle = { color: "#aaa", textDecoration: "none", fontSize: "13px", lineHeight: 2 };
 
+
+
+
+
 export default function Layout() {
+
+  //const generateKey = () => {Math.random().toString(36).substr(2, 9);}
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -43,6 +52,7 @@ export default function Layout() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  
   return (
     <div className={styles.root}>
       <div className={styles.grid} aria-hidden="true" />
@@ -67,7 +77,7 @@ export default function Layout() {
 
         {/* Nav links */}
         <nav className={styles.links} aria-label="Main navigation">
-          <a href="/purchase" className={styles.navBtnBlue}>Purchase</a>
+          <Link to="/purchase" className={styles.navBtnBlue}>Purchase</Link>
           <a href="/download" className={styles.navBtnBlue}>Download</a>
         </nav>
 
