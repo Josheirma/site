@@ -6,6 +6,7 @@ import './App.css'
 import Layout from './components/Layout.tsx';
 import Purchase from './pages/Purchase.tsx';
 import Success from './pages/Success.tsx';
+import Download from './pages/Download.tsx'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/purchase" element={<Purchase />} />
+          <Route path="/download" element={<Download />} />
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/success" element={<Success />} />
         </Route>

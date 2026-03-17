@@ -78,7 +78,7 @@ export default function Layout() {
         {/* Nav links */}
         <nav className={styles.links} aria-label="Main navigation">
           <Link to="/purchase" className={styles.navBtnBlue}>Purchase</Link>
-          <a href="/download" className={styles.navBtnBlue}>Download</a>
+          <Link to="/download" className={styles.navBtnBlue}>Download</Link>
         </nav>
 
       </header>

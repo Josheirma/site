@@ -7,6 +7,7 @@ interface Props {
 }
 
 export default function LicenseCheckout({ onBack }: Props) {
+    console.log("?????");
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [message, setMessage] = useState("");
 
@@ -42,9 +43,12 @@ export default function LicenseCheckout({ onBack }: Props) {
 
       <button
         style={styles.button}
-        onClick={handleBuy}
+        onClick={() => {
+            console.log("button clicked");  // ← add this
+            handleBuy();
+        }}
         disabled={status === "loading"}
-      >
+        >
         {status === "loading" ? "Redirecting to Stripe..." : "Buy Now"}
       </button>
 
