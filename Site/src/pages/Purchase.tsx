@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from '../styles/Purchase.module.css';
 
 export default function Purchase() {
@@ -12,8 +12,10 @@ export default function Purchase() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       });
+
       const data: { url?: string; error?: string } = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Something went wrong.");
+
       window.location.href = data.url!;
     } catch (err) {
       setStatus("error");
@@ -21,24 +23,34 @@ export default function Purchase() {
     }
   }
 
+  // 👇 auto-run when component loads
+  useEffect(() => {
+    handleSubmit();
+  }, []);
+
   return (
-    <>
-      <div className={styles.emailBox}>
-        <h2 className={styles.emailHeading}>Get your license</h2>
-        <p className={styles.emailPara}>You'll enter your email on the next step.</p>
-        <div className={styles.emailRow}>
+    <div className={styles.emailBox}>
+      <h2 className={styles.emailHeading}>Redirecting to checkout...</h2>
+
+      {status === "loading" && (
+        <p className={styles.emailPara}>Please wait...</p>
+      )}
+
+      {status === "error" && (
+        <>
+          <p style={{ color: "#f87171", fontSize: "0.875rem" }}>
+            {message}
+          </p>
+
+          {/* optional retry */}
           <button
             className={styles.emailButton}
             onClick={handleSubmit}
-            disabled={status === "loading"}
           >
-            {status === "loading" ? "..." : "Get Key"}
+            Try Again
           </button>
-        </div>
-        {status === "error" && (
-          <p style={{ color: "#f87171", fontSize: "0.875rem" }}>{message}</p>
-        )}
-      </div>
-    </>
+        </>
+      )}
+    </div>
   );
 }

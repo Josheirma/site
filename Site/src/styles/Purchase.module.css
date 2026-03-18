@@ -7,6 +7,13 @@
   text-align: center;
 }
 
+.emailButton{
+  width:7rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
 .emailHeading {
   font-size: 1.125rem;
   font-weight: 600;
