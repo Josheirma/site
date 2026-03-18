@@ -1,0 +1,17 @@
+.heading{
+
+    font-size: 1rem;
+     margin-top: 2rem;
+}
+
+.content{
+
+    font-size: .7rem;
+    margin-left:2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;  /* horizontal */
+        
+}
