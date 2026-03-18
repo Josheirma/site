@@ -1,0 +1,95 @@
+/* Wrapper for page spacing */
+.wrapper {
+  padding-top: 16rem;       /* space from top nav */
+  padding-bottom: 3rem;    /* space at bottom before footer */
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Container for heading centering */
+.container {
+  display: flex;
+  justify-content: center; /* center heading horizontally */
+  margin-bottom: 1rem;
+}
+
+/* Main page heading */
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Content area */
+.content {
+  display: flex;
+  flex-direction: column;  /* mobile: stack sections vertically */
+  gap: 1rem;               /* space between sections */
+  max-width: 600px;        /* readable line length */
+  margin: 0 auto;          /* center on page */
+  padding-left: 1rem;      /* small padding on mobile */
+  padding-right: 1rem;
+}
+
+/* Section headings inside content */
+.content h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph text */
+.content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f0ede6;
+}
+
+/* Lists */
+.content ul {
+  margin-left: 1.25rem;
+  list-style-type: disc;
+  color: #f0ede6;
+}
+
+/* Links */
+.content a {
+  color: #3b82f6;          /* WorkMate blue */
+  text-decoration: underline;
+}
+
+/* Right-aligned email for contact section */
+.rightColumn {
+  display: inline-block;
+  text-align: left;
+  font-size: 1rem;
+  color: #3b82f6;
+  text-decoration: underline;
+  word-break: break-word;   /* avoid overflow for long emails */
+}
+
+/* Desktop layout: wider screens */
+@media (min-width: 1018px) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  /* Optional: align headings and links in a simple grid for desktop */
+  .row {
+    display: grid;
+    grid-template-columns: max-content 1fr; /* heading on left, content fills right */
+    column-gap: 1rem;
+    align-items: start;
+  }
+
+  .rightColumn {
+    text-align: left;
+  }
+
+  .wrapper{
+    padding-top: 6rem;
+  }
+}

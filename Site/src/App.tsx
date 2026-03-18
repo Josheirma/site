@@ -14,6 +14,7 @@ import Docs from './pages/Docs.tsx';
 import Faq from './pages/Faq.tsx';
 import Refund from './pages/Refund.tsx';
 import Terms from './pages/Terms.tsx';
+import Privacy from  './pages/Privacy.tsx';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/refund" element={<Refund />} />
           <Route path="/terms" element={< Terms/>} />
+          <Route path="/privacy" element={< Privacy/>} />
           {/* <Route path="/" element={< />} />
           <Route path="/" element={< />} />
           <Route path="/" element={< />} /> */}

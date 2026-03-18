@@ -14,13 +14,14 @@ html {
 .title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 0rem;
+   margin-top: 1rem; 
   margin-bottom: 0.8rem;
 }
 
 .titleWord {
   display: block;
   text-align: center;
+  
 }
 
 /* ── Feature grid ── */
@@ -99,6 +100,6 @@ html {
     grid-template-columns: repeat(4, 1fr);
   }
   .title{
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 }
