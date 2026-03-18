@@ -16,17 +16,15 @@ const footerLinks = {
     { label: 'Docs',    to: '/Docs' },
     { label: 'FAQ',     to: '#'     },
     { label: 'Contact', to: '#'     },
-    { label: 'Status',  to: '#'     },
+    
   ],
   Company: [
     { label: 'About',   to: '#' },
-    { label: 'Blog',    to: '#' },
-    { label: 'Careers', to: '#' },
+    
   ],
   Legal: [
     { label: 'Privacy Policy',   to: '#' },
     { label: 'Terms of Service', to: '#' },
-    { label: 'Cookie Policy',    to: '#' },
     { label: 'Refund Policy',    to: '#' },
   ],
 };
