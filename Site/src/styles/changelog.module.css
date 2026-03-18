@@ -1,0 +1,96 @@
+/* ── Wrapper ── */
+.wrapper {
+  padding-top: 16rem;
+  padding-bottom: 3rem;
+  width: 100vw;
+  box-sizing: border-box;
+
+}
+
+/* ── Heading container ── */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* ── Page heading ── */
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Content ── */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;              /* slightly bigger gap for sections */
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #f0ede6;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ── Section (each version block) ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08); /* subtle divider */
+}
+
+/* Remove border from last section */
+.section:last-child {
+  border-bottom: none;
+}
+
+/* Version heading */
+.section h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+.section p {
+  font-size: 1rem;
+  color: rgba(240,237,230,0.8);
+}
+
+/* Lists */
+.section ul {
+  margin-left: 1.25rem;
+  list-style-type: disc;
+  color: #f0ede6;
+}
+
+/* Links (if you add any later) */
+.content a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* ── Desktop (>=600px) ── */
+@media (min-width: 600px) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Optional: grid layout for version + content */
+  .row {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 1rem;
+    align-items: start;
+  }
+}
+
+.wrapper{
+    padding-top: 7rem;
+}

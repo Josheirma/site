@@ -5,10 +5,10 @@ export default function Faq(){
     return(
         <>
         <div className={styles.container}>
-        <div className= {styles.heading}>Contacts</div>
+        <div className= {styles.heading}>FAQ</div>
         </div>
         <div className = {styles.content}>
-            body
+            
         </div>
         </>
     )
