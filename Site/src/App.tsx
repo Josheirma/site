@@ -16,7 +16,7 @@ import Refund from './pages/Refund.tsx';
 import Terms from './pages/Terms.tsx';
 import Privacy from  './pages/Privacy.tsx';
 import Download_Page from './pages/Download_Page.tsx';
-//
+////
 function App() {
   return (
     <BrowserRouter>
