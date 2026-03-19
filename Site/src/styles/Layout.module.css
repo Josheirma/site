@@ -18,6 +18,7 @@
     linear-gradient(rgba(212,240,96,0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(212,240,96,0.03) 1px, transparent 1px);
   background-size: 3rem 3rem;
+  
 }
 
 /* ── NAV — mobile base ── */
@@ -30,16 +31,15 @@
   align-items: flex-start;
   gap: 0;
   padding: 0.75rem 1rem;
-  border-bottom: 0.0625rem solid rgba(255,255,255,0.07);
-  background: rgba(11,12,14,0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  transition: background 0.3s, box-shadow 0.3s;
+  /* border-bottom: 0.0625rem solid rgba(255,255,255,0.07); */
+  background: black;
+  /* backdrop-filter: blur(20px); */
+  
 }
 
 .navScrolled {
-  background: rgba(11,12,14,0.92);
-  box-shadow: 0 0.25rem 2rem rgba(0,0,0,0.4);
+  /* background: rgba(11,12,14,0.92);
+  box-shadow: 0 0.25rem 2rem rgba(0,0,0,0.4); */
 }
 
 /* ── LOGO — mobile base ── */
@@ -59,12 +59,14 @@
   flex-shrink: 0;
   order: 0;
   align-self: center;
+ 
+  padding-top:0rem;
 }
 .logo:hover { opacity: 0.8; }
 
 .logoMark {
-  width: 3rem;
-  height: 3rem;
+  width: 3.1rem;
+  height: 3.1rem;
   background: #3b82f6;
   color: #0b0c0e;
   display: flex;
@@ -74,21 +76,22 @@
   font-size: 2rem;
   font-family: 'Bebas Neue', sans-serif;
   flex-shrink: 0;
-  margin-top: -2.4rem;
+  margin-top: -.05rem;
 }
 
 .company {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'DM Sans', sans-serif;
   color: rgba(240,237,230,0.5);
   letter-spacing: 0.04em;
   line-height: 1;
+  padding-top:0rem;
 }
 
 .logoWord {
   margin-top: 0.1rem;
   margin-left: 0.1rem;
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 
@@ -110,8 +113,8 @@
   display: block;
   width: 100%;
   text-align: center;
-  padding: 0.55rem 0;
-  font-size: 1.125rem;
+  padding: 0 ;
+  font-size: 1.1rem;
   color: #3b82f6;
   font-weight: 600;
   text-decoration: underline;
@@ -122,7 +125,11 @@
 .navBtnBlue:hover {
   background: rgba(59,130,246,0.1);
 }
+.purchaseLink{
 
+  margin-top: 1rem;
+  margin-bottom: .3rem;
+}
 /* ── NAV BTN — hidden on mobile ── */
 .navBtn {
   display: none;
@@ -137,7 +144,7 @@
 }
 
 /* ── 606px and up ── */
-@media (min-width: 1016px) {
+@media (min-width: 800px) {
   .nav {
     flex-wrap: nowrap;
     align-items: center;
@@ -153,6 +160,7 @@
     margin-top: 0;
     margin-left: auto;
     border-top: none;
+    font-size: 1.25rem;
   }
 
   .navBtnBlue {
@@ -214,6 +222,7 @@
 /* ── FOOTER ── */
 .footer {
   padding: 0 3.75rem 2rem;
+  width: 100vw;
 }
 
 .footerDivider {
@@ -224,7 +233,7 @@
 
 .footerGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.75rem 1.25rem;
   margin-bottom: 2.5rem;
   justify-items: center;

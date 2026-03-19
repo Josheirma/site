@@ -15,6 +15,7 @@ import Faq from './pages/Faq.tsx';
 import Refund from './pages/Refund.tsx';
 import Terms from './pages/Terms.tsx';
 import Privacy from  './pages/Privacy.tsx';
+import Download_Page from './pages/Download_Page.tsx';
 
 function App() {
   return (
@@ -22,9 +23,11 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/purchase" element={<Purchase />} />
-          <Route path="/download" element={<Download />} />
           <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/purchase" element={<Purchase />} />
+          <Route path="/download_page" element={<Download_Page/>}/>
+          <Route path="/download" element={<Download />} />
+          
           <Route path="/success" element={<Success />} />
           <Route path="/about" element={<About />} />
           <Route path="/changelog" element={<Changelog />} />
@@ -34,6 +37,7 @@ function App() {
           <Route path="/refund" element={<Refund />} />
           <Route path="/terms" element={< Terms/>} />
           <Route path="/privacy" element={< Privacy/>} />
+          
           {/* <Route path="/" element={< />} />
           <Route path="/" element={< />} />
           <Route path="/" element={< />} /> */}

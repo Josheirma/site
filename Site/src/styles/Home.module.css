@@ -1,6 +1,4 @@
-html {
-  font-size: clamp(16px, calc(16px + 20 * ((100vw - 400px) / 1200)), 38.276px);
-}
+
 
 .homeWrapper {
   padding: 0rem 0.5rem;
@@ -9,6 +7,7 @@ html {
   align-items: center;
   gap: 1.5rem;
   overflow: hidden;
+  margin-top:2rem;
 }
 
 .title {
