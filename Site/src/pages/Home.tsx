@@ -1,4 +1,4 @@
-//
+////
 import {useEffect} from 'react';
 import PanAndDrag from '../components/PanAndDrag';
 import styles from '../styles/Home.module.css';
