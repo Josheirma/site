@@ -1,6 +1,12 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import monthImg from "../images/month.png";
 
+interface Point {
+  x: number;
+  y: number;
+}
+
+
 const images = [
   { src: monthImg, title: "Monthly Schedule" },
 ];
@@ -11,12 +17,15 @@ export default function PanAndDrag() {
   const [isDragging, setIsDragging] = useState(false);
   const [diameter, setDiameter] = useState(0);  // ← driven by ResizeObserver
 
-  const dragStart = useRef(null);
+  const dragStart = useRef<Point | null>(null);
+
   const wrapperRef = useRef(null);  // ← observe the WRAPPER, not the circle
 
   const maxPan = diameter * 0.3;  // ← derived, not state
 
-  const clamp = (val, min, max) => Math.min(max, Math.max(min, val));
+  const clamp = (val: number, min: number, max: number): number => {
+  return Math.min(max, Math.max(min, val));
+};
 
   // ResizeObserver watches the wrapper and updates diameter
   useEffect(() => {
@@ -33,19 +42,20 @@ export default function PanAndDrag() {
     setOffset({ x: 0, y: 0 });
   }, [currentIndex]);
 
-  const handleMouseDown = (e) => {
-    e.preventDefault();
-    setIsDragging(true);
-    dragStart.current = { x: e.clientX - offset.x, y: e.clientY - offset.y };
-  };
+  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+  e.preventDefault();
+  setIsDragging(true);
+  dragStart.current = { x: e.clientX - offset.x, y: e.clientY - offset.y };
+};
 
-  const handleMouseMove = useCallback((e) => {
-    if (!isDragging || !dragStart.current) return;
-    setOffset({
-      x: clamp(e.clientX - dragStart.current.x, -maxPan, maxPan),
-      y: clamp(e.clientY - dragStart.current.y, -maxPan, maxPan),
-    });
-  }, [isDragging, maxPan]);
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+  if (!isDragging || !dragStart.current) return;
+
+  setOffset({
+    x: clamp(e.clientX - dragStart.current.x, -maxPan, maxPan),
+    y: clamp(e.clientY - dragStart.current.y, -maxPan, maxPan),
+  });
+}, [isDragging, maxPan]);
 
   const handleMouseUp = useCallback(() => setIsDragging(false), []);
 
@@ -60,20 +70,21 @@ export default function PanAndDrag() {
     };
   }, [isDragging, handleMouseMove, handleMouseUp]);
 
-  const handleTouchStart = (e) => {
-    const touch = e.touches[0];
-    setIsDragging(true);
-    dragStart.current = { x: touch.clientX - offset.x, y: touch.clientY - offset.y };
-  };
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+  const touch = e.touches[0];
+  setIsDragging(true);
+  dragStart.current = { x: touch.clientX - offset.x, y: touch.clientY - offset.y };
+};
 
-  const handleTouchMove = (e) => {
-    if (!isDragging || !dragStart.current) return;
-    const touch = e.touches[0];
-    setOffset({
-      x: clamp(touch.clientX - dragStart.current.x, -maxPan, maxPan),
-      y: clamp(touch.clientY - dragStart.current.y, -maxPan, maxPan),
-    });
-  };
+const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+  if (!isDragging || !dragStart.current) return;
+  const touch = e.touches[0];
+
+  setOffset({
+    x: clamp(touch.clientX - dragStart.current.x, -maxPan, maxPan),
+    y: clamp(touch.clientY - dragStart.current.y, -maxPan, maxPan),
+  });
+};
 
   const handleTouchEnd = () => setIsDragging(false);
 

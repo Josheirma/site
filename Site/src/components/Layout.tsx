@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
+import  { useState, useEffect } from 'react';
+import { Outlet, Link, useNavigate } from 'react-router-dom';
 import styles from '../styles/Layout.module.css';
 
 
@@ -29,7 +29,7 @@ const footerLinks = {
   ],
 };
 
-const linkStyle = { color: "#aaa", textDecoration: "none", fontSize: "13px", lineHeight: 2 };
+//const linkStyle = { color: "#aaa", textDecoration: "none", fontSize: "13px", lineHeight: 2 };
 
 
 
@@ -40,7 +40,7 @@ export default function Layout() {
   //const generateKey = () => {Math.random().toString(36).substr(2, 9);}
 
   const navigate = useNavigate();
-  const location = useLocation();
+  //const location = useLocation();
 
   const [scrolled, setScrolled] = useState(false);
 

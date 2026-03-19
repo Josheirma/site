@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from '../styles/download.module.css';
 
 export default function Download_Page() {

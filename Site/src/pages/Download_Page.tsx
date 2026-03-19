@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import styles from '../styles/download_page.module.css';
 
 export default function Download_Page() {
