@@ -1,6 +1,6 @@
 import { useState } from "react";
-import styles from '../styles/download.module.css';
-
+// import styles from '../styles/download.module.css';
+import styles from '../styles/Download.module.css'
 export default function Download_Page() {
   const [status, setStatus] = useState('');
 
