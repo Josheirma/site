@@ -103,7 +103,7 @@ export default function Layout() {
             </div>
           ))}
         </div>
-        <span className={styles.footerCopy}>© 2025 Simplistics Inc. All rights reserved, WorkMate.</span>
+        <div className={styles.footerCopy}>© 2025 Simplistics Inc. All rights reserved, WorkMate.</div>
       </footer>
     </div>
   );

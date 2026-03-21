@@ -6,6 +6,7 @@
   color: #f0ede6;
   font-family: 'DM Sans', sans-serif;
   position: relative;
+  padding: 0 5%;
 }
 
 /* ── GRID BG ── */
@@ -143,6 +144,8 @@
   
 }
 
+
+
 /* ── 606px and up ── */
 @media (min-width: 800px) {
   .nav {
@@ -221,8 +224,11 @@
 
 /* ── FOOTER ── */
 .footer {
-  padding: 0 3.75rem 2rem;
+ 
   width: 100vw;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .footerDivider {
@@ -265,7 +271,9 @@
 .footerCopy {
   color: #555;
   font-size: 0.75rem;
+  padding-bottom: 2rem;
 }
+
 
 /* ── Footer 611px and up ── */
 /* @media (min-width: 976rem) {

@@ -154,8 +154,8 @@ const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
       <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
         {images.map((_, i) => (
           <div key={i} onClick={() => setCurrentIndex(i)} style={{
-            width: i === currentIndex ? "1rem" : ".5rem",
-            height: ".4rem",
+            width: i === currentIndex ? "2rem" : ".5rem",
+            height: ".7rem",
             borderRadius: 4,
             background: i === currentIndex ? "#6c63ff" : "rgba(255,255,255,0.3)",
             cursor: "pointer", transition: "all 0.3s ease",
@@ -163,15 +163,36 @@ const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
         ))}
       </div>
 
-      <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
-        <button onClick={goLeft} style={btnStyle}>←</button>
-        <span style={{ color: "#aaa", fontSize: " .7rem", letterSpacing: "0.2em", fontFamily: "monospace", minWidth: 60, textAlign: "center" }}>
-          {String(currentIndex + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}
-        </span>
-        <button onClick={goRight} style={btnStyle}>→</button>
-      </div>
+      <div
+  style={{
+    display: "flex",
+    gap: "2rem",
+    alignItems: "center",
+    flexWrap: "nowrap",   // prevent wrapping
+    justifyContent: "center"
+  }}
+>
+  <button onClick={goLeft} style={btnStyle}>←</button>
 
-      <p style={{ color: "#aaa", fontSize: " .7rem", letterSpacing: "0.15em", fontFamily: "monospace", margin: 0 }}>
+  <div
+    style={{
+      color: "#aaa",
+      fontSize: "1.3rem",      // adjust bigger font
+      letterSpacing: "0.1em",
+      fontFamily: "monospace",
+      minWidth: 60,
+      textAlign: "center",
+      whiteSpace: "nowrap",    // KEEP all text on a single line
+      flexShrink: 0            // prevent shrinking
+    }}
+  >
+    {String(currentIndex + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}
+  </div>
+
+  <button onClick={goRight} style={btnStyle}>→</button>
+</div>
+
+      <p style={{ color: "#aaa", fontSize: " 1rem", letterSpacing: "0.15em", fontFamily: "monospace", margin: 0 }}>
         DRAG TO PAN
       </p>
     </div>
