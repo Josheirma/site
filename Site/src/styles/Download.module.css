@@ -3,18 +3,22 @@
 /* ── Wrapper ── */
 .wrapper {
   width: 100%;
-  padding: 4rem 1rem 4rem 1rem; /* top, sides, bottom */
+  /* padding: 4rem 1rem 4rem 1rem;  */
   box-sizing: border-box;
   background-color: white; /* light background */
-  padding-top: 12rem;
+  padding-left: 2.5rem;
+  
+  
 }
 
 /* ── Heading Container ── */
 .container {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
-  margin-top: 20rem;
+  /* margin-bottom: 2rem; */
+  /* margin-top: 5rem;
+  */
+  
 }
 
 .heading {
@@ -35,7 +39,11 @@
   font-size: 1rem;
   line-height: 1.5;
   color: #1f2937; /* dark gray text */
-  margin-top: 9rem;
+   margin-top: 9rem; 
+  /* margin-left: 1.4rem;
+  margin-right: 1.4rem; */
+  margin-top: 15rem;
+  
 }
 
 /* ── Subheadings ── */
@@ -62,7 +70,7 @@
 .buttonRow {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
 
 /* ── Download Button ── */

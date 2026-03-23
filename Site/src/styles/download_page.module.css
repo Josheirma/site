@@ -1,6 +1,6 @@
 /* ── Wrapper ── */
 .wrapper {
-  padding-top: 3rem;        /* space below nav */
+         /* space below nav */
   padding-bottom: 3rem;     /* space above footer */
   width: 100vw;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  padding-top: 15rem; 
 }
 
 /* ── Page heading ── */
@@ -29,8 +30,8 @@
   gap: 1rem;
   max-width: 600px;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
   color: #f0ede6;
   font-size: 1rem;
   line-height: 1.5;

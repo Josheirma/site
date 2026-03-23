@@ -1,6 +1,6 @@
 /* wrapper */
 .wrapper {
-  padding-top: 16rem;
+  
   width: 100vw;
   
   padding-bottom: 1rem; 
@@ -13,6 +13,7 @@
   justify-content: center;
   /* margin-bottom: 1rem; */
   margin-top: 0.0rem;
+  padding-top: 15rem;
 }
 
 .heading {
@@ -29,7 +30,8 @@
   gap: 1rem;
   max-width: 400px;
   margin: 0 auto;
-  margin-left: 2rem;
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
   margin-top: 1rem;
 }
 

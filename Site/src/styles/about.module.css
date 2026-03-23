@@ -1,10 +1,10 @@
 /* ── Wrapper for spacing ── */
 .wrapper {
-  padding-top: 3rem;        /* space from top nav */
+         /* space from top nav */
   padding-bottom: 3rem;     /* space before footer */
   width: 100vw;
   box-sizing: border-box;
-  padding-top: 15rem;
+  padding-top: 0rem;
   
 }
 
@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;   /* center heading horizontally */
   margin-bottom: 1rem;
+  margin-top: 15rem;
 }
 
 /* ── Main page heading ── */

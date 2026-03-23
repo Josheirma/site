@@ -22,6 +22,7 @@ export default function Download_Page() {
     <div className={styles.wrapper}>
       
 
+    <div className = {styles.container}>
       <div className={styles.content}>
 
         <div className={styles.buttonRow}>
@@ -73,6 +74,7 @@ export default function Download_Page() {
         {/* Status Message */}
         {status && <p className={styles.status}>{status}</p>}
       </div>
+    </div>
     </div>
   );
 }
