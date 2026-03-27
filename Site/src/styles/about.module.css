@@ -40,6 +40,7 @@
   line-height: 1.5;
   
   text-align: left;
+  
 }
 
 /* Section headings inside content */
@@ -96,9 +97,9 @@
   }
 
   .container{
-
-    margin-top:  5rem;
+    margin-top:4rem;
   }
+  
 
   /* .wrapper{
     margin-top: 2rem;

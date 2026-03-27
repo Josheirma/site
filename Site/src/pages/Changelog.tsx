@@ -4,11 +4,11 @@ export default function Changelog() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h1 className={styles.heading}>Changelog</h1>
-      </div>
+      <h1 className={styles.heading}>Changelog</h1>  
+      
 
       <div className={styles.content}>
-
+      
         {/* Upcoming Release */}
         <div className={styles.section}>
           <h2>v1.0.0 (Expected: June 2026)</h2>
@@ -36,6 +36,7 @@ export default function Changelog() {
         </div>
 
       </div>
+    </div>
     </div>
   )
 }

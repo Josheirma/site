@@ -5,7 +5,7 @@ export default function About() {
     
   <div className={styles.wrapper}>
   <div className={styles.container}>
-    <h1 className={styles.heading}>About WorkMate</h1>  {/* ← moved inside */}
+    <h1 className={styles.heading}>About WorkMate</h1>  
 
     <div className={styles.content}>
       <p>
