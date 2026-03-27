@@ -6,15 +6,15 @@ import styles from '../styles/Layout.module.css';
 
 const footerLinks = {
   Product: [
-    { label: 'Home',      to: '/Home'     },
-    { label: 'Features',  to: '/Features' },
+    { label: 'Home',      to: '/home'     },
+    { label: 'Features',  to: '/features' },
     { label: 'Purchase',  to: '/Purchase' },
     { label: 'Download',  to: '/Download' },
-    { label: 'Changelog', to: '#'         },
+    { label: 'Changelog', to: '/Changelog'         },
   ],
   Support: [
     { label: 'Docs',    to: '/Docs' },
-    { label: 'FAQ',     to: '#'     },
+    { label: 'FAQ',     to: ''     },
     { label: 'Contact', to: '#'     },
     
   ],

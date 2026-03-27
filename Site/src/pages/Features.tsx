@@ -1,4 +1,4 @@
-import styles from '../styles/shared.module.css';
+import styles from '../styles/features.module.css';
 
 export default function Features(){
     
