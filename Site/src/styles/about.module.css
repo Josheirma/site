@@ -28,14 +28,11 @@
 /* ── Content area ── */
 .content {
   display: flex;
-  flex-direction: column;   /* mobile: stack sections vertically */
-  gap: 1rem;                /* spacing between sections */
+  flex-direction: column;   
+  gap: 1rem;               
   width: 3840px;
-  max-width: 100%;         /* readable line length */
-  /* margin: 0 auto;         */
-  /* padding-left: 1.4rem;       
-  padding-right: 1.4rem; */
-  color: #f0ede6;           /* match WorkMate text color */
+  max-width: 100%;         
+  color: #f0ede6;           
   font-size: 1rem;
   line-height: 1.5;
   

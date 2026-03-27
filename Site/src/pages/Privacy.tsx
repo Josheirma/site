@@ -5,7 +5,7 @@ export default function Privacy() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <h1 className={styles.heading}>Privacy Policy</h1>
-      </div>
+      
 
       <div className={styles.content}>
         <p>
@@ -72,6 +72,7 @@ export default function Privacy() {
           <a href="mailto:privacy@server.com" className={styles.rightColumn}>privacy@server.com</a>
         </p>
       </div>
+    </div>
     </div>
   )
 }
