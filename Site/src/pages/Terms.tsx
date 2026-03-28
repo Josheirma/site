@@ -5,7 +5,7 @@ export default function Terms() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <h1 className={styles.heading}>Terms of Service</h1>
-      </div>
+      
 
       <div className={styles.content}>
         <h2>1. Acceptance of Terms</h2>
@@ -71,6 +71,7 @@ export default function Terms() {
           </a>
         </p>
       </div>
+    </div>
     </div>
   )
 }

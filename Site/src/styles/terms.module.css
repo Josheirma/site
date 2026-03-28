@@ -1,16 +1,22 @@
 /* ── Wrapper ── */
 .wrapper {
-  padding-top: 3rem;        /* space from top nav */
-  padding-bottom: 3rem;     /* space before footer */
+  display: flex;
+  justify-content: center;
+  
   width: 100vw;
-  box-sizing: border-box;
+  max-width: 7680px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* ── Heading container ── */
 .container {
   display: flex;
-  justify-content: center;   /* center heading horizontally */
+  flex-direction: column;
   margin-bottom: 1rem;
+  max-width: 2000px;
+  width: 100%;
+  margin-top: 14rem;
 }
 
 /* ── Main heading ── */
@@ -26,13 +32,15 @@
   display: flex;
   flex-direction: column;   /* mobile: stack sections vertically */
   gap: 1rem;                /* spacing between sections */
-  max-width: 600px;         /* readable line length */
-  margin: 0 auto;           /* center on page */
+          /* readable line length */
+            /* center on page */
   padding-left: 1rem;
   padding-right: 1rem;
   color: #f0ede6;           /* WorkMate text color */
   font-size: 1rem;
   line-height: 1.5;
+  max-width: 100%;
+  width: 3840px;
 }
 
 /* Section headings inside content */
@@ -91,6 +99,10 @@
     text-align: left;
   }
   .wrapper{
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
+  }
+  .container{
+    margin-top: 4rem;
+    padding-top: 0rem;
   }
 }
