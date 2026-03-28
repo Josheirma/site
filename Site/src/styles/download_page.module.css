@@ -2,24 +2,32 @@
 .wrapper {
          /* space below nav */
   padding-bottom: 3rem;     /* space above footer */
+  display: flex;
+  justify-content: center;   /* centers the whole block */
   width: 100vw;
-  box-sizing: border-box;
-  
+  max-width: 7680px;
+ 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom:1.5rem;
 }
 
 /* ── Heading container ── */
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-bottom: 1rem;
-  padding-top: 15rem; 
+  margin-top: 14rem; 
+  max-width: 2000px;
+  width: 100%;
+  margin-top: 14rem;
 }
 
 /* ── Page heading ── */
 .heading {
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
+  
   margin-bottom: 1.5rem;
 }
 
@@ -28,13 +36,16 @@
   display: flex;
   flex-direction: column;   /* mobile: stacked */
   gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
+  max-width: 100%;
   color: #f0ede6;
   font-size: 1rem;
-  line-height: 1.5;
+  
+  width:3840px;
+  text-align: left;
+  
+  padding-bottom:0rem;
+ 
+  
 }
 
 /* Section headings */
@@ -69,6 +80,7 @@
   color: #3b82f6;
   text-decoration: underline;
   word-break: break-word;
+  margin-bottom: 1rem;
 }
 
 /* ── Optional status message (for "downloading...") ── */
@@ -80,8 +92,8 @@
 /* ── Desktop (>=600px) ── */
 @media (min-width: 600px) {
   .content {
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: -2rem;
+    
   }
 
   /* Optional: align sections like Contacts */
@@ -91,7 +103,22 @@
     column-gap: 1rem;
     align-items: start;
   }
-  .wrapper{
-    margin-top: 3rem;
+  .container{
+    margin-top: 4rem;
   }
+}
+
+
+
+
+/*Then to freeze it at 5000px+, calculate what 2.1vw is at 5000px → 2.1 * 50 = 105px, then lock it:*/
+@media (min-width: 5000px){
+:root {
+    font-size: 105px; /* freezes at the value reached at 5000px */
+  }
+
+  .content {
+  width: calc(3840px * 1.05)
+}
+
 }

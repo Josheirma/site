@@ -8,7 +8,7 @@ export default function Download_Page() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <h1 className={styles.heading}>Download WorkMate</h1>
-      </div>
+      
 
       <div className={styles.content}>
        
@@ -43,6 +43,7 @@ export default function Download_Page() {
           </a>
         </p>
       </div>
+    </div>
     </div>
   );
 }
