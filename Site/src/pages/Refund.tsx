@@ -5,7 +5,7 @@ export default function Refund() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <h1 className={styles.heading}>Refund Policy</h1>
-      </div>
+      
 
       <div className={styles.content}>
         <h2>1. Overview</h2>
@@ -64,6 +64,7 @@ export default function Refund() {
           </a>
         </p>
       </div>
+    </div>
     </div>
   )
 }

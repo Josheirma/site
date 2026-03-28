@@ -1,17 +1,22 @@
 /* ── Wrapper ── */
 .wrapper {
-       /* space below nav */
-  padding-bottom: 3rem;     /* space above footer */
+  display: flex;
+  justify-content: center;   /* centers the whole block */
   width: 100vw;
-  box-sizing: border-box;
+  max-width: 7680px;
+   padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 
 /* ── Heading container ── */
 .container {
   display: flex;
-  justify-content: center;
   margin-bottom: 1rem;
-  padding-top: 12rem;
+  padding-top: 14rem;
+  width: 100%;
+  max-width: 2000px;          /* 👈 key: readable width */
+  flex-direction: column;
 }
 
 /* ── Page heading ── */
@@ -27,13 +32,13 @@
   display: flex;
   flex-direction: column;   /* mobile: stacked layout */
   gap: 1rem;                /* spacing between sections */
-  max-width: 600px;         /* readable width */
-  margin: 0 auto;           /* center on page */
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: 100%;         /* readable width */
+  /* margin: 0 auto;           */
+  
   color: #f0ede6;
   font-size: 1rem;
   line-height: 1.5;
+  width: 3840px;
 }
 
 /* Section headings */
@@ -93,6 +98,22 @@
   }
 
   .wrapper{
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
   }
+
+  .container{
+    padding-top: 4rem;
+  }
+}
+
+
+@media (min-width: 5000px){
+:root {
+    font-size: 105px; /* freezes at the value reached at 5000px */
+  }
+
+  .content {
+  width: calc(3840 * 1.05)
+}
+
 }

@@ -106,3 +106,15 @@
     padding-top: 0rem;
   }
 }
+
+
+@media (min-width: 5000px){
+:root {
+    font-size: 105px; /* freezes at the value reached at 5000px */
+  }
+
+  .content {
+  width: calc(3840 * 1.05)
+}
+
+}
