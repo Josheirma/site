@@ -111,13 +111,14 @@ const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
       </div>
 
       {/* Wrapper — CSS controls the size, ResizeObserver reads it */}
-      <div
+<div
   ref={wrapperRef}
   style={{
     width: "clamp(250px, calc(10px + 30.88vw), 570px)",
     alignSelf: "center",
-  }}
->
+    display: "flex",          
+    justifyContent: "center", 
+  }}>
         {/* Circle — size comes from JS state so it always matches */}
         <div
           style={{

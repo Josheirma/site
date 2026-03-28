@@ -1,47 +1,72 @@
 
-
-/* .homeWrapper {
-  padding: 0rem 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  overflow: hidden;
-  margin-top:13rem;
-} */
-
-
 .homeWrapper {
-  padding: 0 5%; /* 2.5% left + right padding */
+  /* padding: 0 5%;  */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  /* flex-direction: column;
+  align-items: center; */
+  justify-content: center;
+  /* gap: 1.5rem; */
   overflow: hidden;
-  margin-top: 4rem;
-  box-sizing: border-box; /* ensures padding doesn’t break width */
+  /* margin-top: 14rem; */
+  /* box-sizing: border-box;  */
+  width: 100vw;
+  max-width: 7680px;
+    padding-left: 1rem;
+  padding-right: 1rem;
+
 }
 
 
 .title {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font-weight: bold;
-   margin-top: 1rem; 
-  margin-bottom: 0.8rem;
+   
+  margin-bottom: 1.5rem;
+  margin-top: 0rem;
+  
 }
 
 .titleWord {
   display: block;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+
+/* .titleWord {
+  display: block;
+  text-align: center;
+  
+} */
+
+.content{
+  width: 3840px;
+  max-width: 100%; 
+  
+  
   
 }
+
+.container{
+
+  width: 100%;
+  max-width: 2000px;          /* 👈 key: readable width */
+  display: flex;
+  flex-direction: column;
+  margin-top:  14rem;
+}
+
 
 /* ── Feature grid ── */
 .featureGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  width: 95%;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
 }
 
 .featureGrid > div {
@@ -52,7 +77,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  text-align: center;
+ 
 }
 
 .featureHeading {
@@ -60,7 +85,7 @@
   font-size: 1.125rem;
   font-weight: 600;
   color: white;
-  text-align: center;
+  
   
 }
 
@@ -76,6 +101,8 @@
   width: 100%;
   max-width: 56.25rem;
   border-top: 0.0625rem solid #e0e0e0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* ── Left col / Right col rows ── */
@@ -84,13 +111,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   width: 100%;
-  max-width: 37.5rem;
   justify-items: center;
+ 
+  
 }
 
 .sideItem {
   width: 100%;
-  text-align: center;
+  margin-bottom:1rem;
 }
 
 /* ── Image row ── */
@@ -99,13 +127,10 @@
   justify-content: center;
   width: 100%;
   max-width: 37.5rem;
+  margin-inline: auto; /* ← centers the wrapper itself */
 }
 
-/* @media (max-width: 30.4375rem) {
-  .title {
-    margin-top: 18rem;
-  }
-} */
+
 
 /* ── Desktop ── */
 @media (min-width: 600px) {
@@ -127,8 +152,12 @@
   }
 
   .container{
-    margin-top:4rem;
+     margin-top:4rem; 
   }
+
+   .homeWrapper{
+    /* margin-top: 4rem; */
+  } 
 }
 
 
@@ -138,7 +167,7 @@
   }
 
   .content {
-  width: calc(3840 * 1.05)
+  width: calc(3840px * 1.05)
 }
 
 }

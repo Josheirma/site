@@ -9,7 +9,10 @@
   padding: 0 2.5%;
   padding-right: 0;
   padding-left: 0;
-}
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}  
 
 /* ── GRID BG ── */
 .grid {
@@ -144,6 +147,7 @@
   position: relative;
   z-index: 1;
   padding-top: 0.6875rem;
+  flex: 1;
   
 }
 
@@ -155,6 +159,7 @@
   margin: 0 auto;
   
   margin-top:0rem;
+  
 }
 
 /* Divider */
@@ -220,7 +225,7 @@
 
 
 /* ── 606px and up ── */
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .nav {
     flex-wrap: nowrap;
     align-items: center;

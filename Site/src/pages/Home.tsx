@@ -48,12 +48,15 @@ export default function Home() {
     <div className={styles.homeWrapper}>
 
       {/* Title */}
+      <div className={styles.container}>
       <div className={styles.title}>
-        <span className={styles.titleWord}>Super Easy</span>
-       
-        <span className={styles.titleWord}>Employee Scheduler</span>
+      
+        <h1 className={styles.titleWord}>Super Easy</h1>
+        <h1 className={styles.titleWord}>Employee Scheduler</h1>
         
       </div>
+
+      <div className={styles.content}>
 
       {/* Feature grid — 4 cols desktop, 2 cols mobile */}
       <div className={styles.featureGrid}>
@@ -92,6 +95,8 @@ export default function Home() {
           </div>
         ))}
       </div>
+    </div>
+    </div>
     </div>
   );
 }

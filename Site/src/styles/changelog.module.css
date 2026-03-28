@@ -12,7 +12,7 @@
 /* ── Heading container ── */
 .container {
   width: 100%;
-  max-width: 1050px;
+  max-width: 2000px;
   display: flex;
   flex-direction: column;
    margin-top: 14rem;
@@ -42,6 +42,7 @@
   line-height: 1.5;
   text-align: left;
   width: 3840;
+  margin-top: 1.5rem;
   
   
 }

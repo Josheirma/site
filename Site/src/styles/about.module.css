@@ -4,7 +4,7 @@
   justify-content: center;   /* centers the whole block */
   width: 100vw;
   max-width: 7680px;
-  padding: 0 2vw;
+ 
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -12,7 +12,7 @@
 /* centered content box */
 .container {
   width: 100%;
-  max-width: 1050px;          /* 👈 key: readable width */
+  max-width: 2000px;          /* 👈 key: readable width */
   display: flex;
   flex-direction: column;
   margin-top:  14rem;
@@ -24,6 +24,7 @@
   font-weight: bold;
   text-align: left;          /* 👈 stays left */
   margin-bottom: 1.5rem;
+  margin-top: 0rem;
 }
 /* ── Content area ── */
 .content {
