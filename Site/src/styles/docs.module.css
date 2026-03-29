@@ -2,125 +2,126 @@
 
 /* ── Page container ── */
 .wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  max-width: 7680px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-width: 7680px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
 }
 
 .container {
-  width: 100%;
-  max-width: 2000px;          /* 👈 key: readable width */
-  display: flex;
-  flex-direction: column;
-  margin-top:  14rem;
+    width: 100%;
+    max-width: 2000px;
+    /* 👈 key: readable width */
+    display: flex;
+    flex-direction: column;
+    margin-top: 14rem;
 }
 
 
 /* ── Heading ── */
 .heading {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f0ede6;
- 
-  margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0ede6;
+
+    margin-bottom: 1rem;
 }
 
 /* ── Content ── */
 .content {
-  display: flex;
-  flex-direction: column;
-  width: 3840px;
-  max-width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: #f0ede6;
-  font-family: 'DM Sans', sans-serif;
-  line-height: 1.5;
-  margin-bottom: 1rem;;
+    display: flex;
+    flex-direction: column;
+    width: 3840px;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #f0ede6;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    ;
 }
 
 /* ── Section headings ── */
 .content h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #f0ede6;
-  scroll-margin-top: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #f0ede6;
+    scroll-margin-top: 4rem;
 }
 
 /* ── Paragraphs ── */
 .content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: #cfcfcf;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #cfcfcf;
 }
 
 /* ── Lists ── */
 .content ul {
-  padding-left: 1.25rem;
-  list-style-type: disc;
-  line-height: 1.6;
-  margin-top: 0;
-  margin-bottom: 0;
+    padding-left: 1.25rem;
+    list-style-type: disc;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ── List items ── */
 .content li {
-  margin-bottom: 0.4rem;
-  color: #cfcfcf;
+    margin-bottom: 0.4rem;
+    color: #cfcfcf;
 }
 
 /* ── Links ── */
 .content a {
-  color: #3b82f6;
-  text-decoration: underline;
+    color: #3b82f6;
+    text-decoration: underline;
 }
 
 @media (max-width: 599px) {
-  .content h2 {
-    scroll-margin-top: 20rem; /* ← matches taller mobile nav */
-  }
+    .content h2 {
+        scroll-margin-top: 20rem;
+        /* ← matches taller mobile nav */
+    }
 
-  .content h2 {
-    
-  }
+    .content h2 {}
 }
 
 
 /* ── Desktop ── */
 @media (min-width: 600px) {
-  .heading {
-    
-  }
+    .heading {}
 
-  .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .container{
-    margin-top: 4rem;
-  }
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-  .content h2 {
-  scroll-margin-top: 6rem; /* desktop */
-}
+    .container {
+        margin-top: 4rem;
+    }
+
+    .content h2 {
+        scroll-margin-top: 6rem;
+        /* desktop */
+    }
 
 }
 
 /* ── 5000px+ ── */
 @media (min-width: 5000px) {
-  :root {
-    font-size: 105px;
-  }
+    :root {
+        font-size: 105px;
+    }
 
-  .content {
-    width: calc(3840px * 1.05);
-  }
+    .content {
+        width: calc(3840px * 1.05);
+    }
 }
