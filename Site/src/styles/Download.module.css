@@ -2,56 +2,54 @@
 
 /* ── Wrapper ── */
 .wrapper {
-  width: 100%;
-  /* padding: 4rem 1rem 4rem 1rem;  */
-  box-sizing: border-box;
-  background-color: white; /* light background */
-  padding-left: 2.5rem;
-  
-  
+  display: flex;
+  justify-content: center;   /* centers the whole block */
+  width: 100vw;
+  max-width: 7680px;
+ 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #0b0c0e;
 }
+
 
 /* ── Heading Container ── */
 .container {
+  width: 100%;
+  max-width: 2000px;          /* 👈 key: readable width */
   display: flex;
-  justify-content: center;
-  /* margin-bottom: 2rem; */
-  /* margin-top: 5rem;
-  */
+  flex-direction: column;
+  margin-top:  14rem;
   
 }
 
 .heading {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  color: #111827; /* dark heading */
+  
 }
 
 /* ── Content Card ── */
 .content {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
+ 
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #1f2937; /* dark gray text */
-   margin-top: 9rem; 
-  /* margin-left: 1.4rem;
-  margin-right: 1.4rem; */
-  margin-top: 15rem;
   
-}
 
-/* ── Subheadings ── */
-.content h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #111827;
+  width: 3840px;
+  max-width: 100%;         
+  color: #f0ede6;           
+ 
+  
+  text-align: left;
+   
+  
 }
 
 /* ── Lists ── */
@@ -60,17 +58,29 @@
   margin: 0;
 }
 
+.content h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.content p {
+  margin-bottom: 0rem;
+}
+
 /* ── Email Links ── */
 .rightColumn {
   color: #3b82f6;
   text-decoration: underline;
+  margin-bottom: 1.5rem;
 }
 
 /* ── Download Button Row ── */
 .buttonRow {
   display: flex;
-  justify-content: center;
-  /* margin-top: 1.5rem; */
+  justify-content: left;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; 
 }
 
 /* ── Download Button ── */
@@ -83,6 +93,12 @@
   border-radius: 0.375rem;
   cursor: pointer;
   transition: background 0.2s;
+}
+
+.downloadButton2{
+margin-top: 1.5rem;
+margin-bottom: .5rem;
+
 }
 
 .downloadButton:hover {
@@ -107,7 +123,7 @@
 /* ── Desktop Layout (≥600px) ── */
 @media (min-width: 600px) {
   .wrapper {
-    padding: 6rem 2rem 6rem 2rem;
+    
   }
 
   .heading {
@@ -116,7 +132,7 @@
 
   .content {
     font-size: 1.05rem;
-    gap: 2rem;
+    
   }
 
   .downloadButton {
@@ -128,4 +144,29 @@
     flex-direction: row;
     align-items: flex-start; /* align top of links with heading */
   }
+
+  .container{
+  margin-top:4rem;
 }
+
+.content h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.content p {
+  margin-bottom: 0rem;
+}
+}
+
+/*Then to freeze it at 5000px+, calculate what 2.1vw is at 5000px → 2.1 * 50 = 105px, then lock it:*/
+@media (min-width: 5000px){
+:root {
+    font-size: 105px; /* freezes at the value reached at 5000px */
+  }
+
+  .content {
+  width: calc(3840 * 1.05)
+}
+
+}
+

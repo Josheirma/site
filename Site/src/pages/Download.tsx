@@ -66,7 +66,8 @@ export default function Download_Page() {
 
         {/* Download Button */}
         <div className={styles.buttonRow}>
-          <button className={styles.downloadButton} onClick={handleDownload}>
+          {/* <button className={styles.downloadButton} onClick={handleDownload}> */}
+          <button className={`${styles.downloadButton} ${styles.downloadButton2}`} onClick={handleDownload}>
             ⬇ Download WorkMate v1.0.0
           </button>
         </div>
