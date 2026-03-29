@@ -1,13 +1,108 @@
-.container{
-   
+/* ── Page container ── */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  max-width: 7680px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.heading{
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  color: #f0ede6;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 14rem;
+}
+
+/* ── Title ── */
+.container h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Intro paragraph ── */
+.container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #cfcfcf;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+/* ── Merged duplicate .heading ── */
+.heading {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; /* ✅ semicolon fixed */
+}
+
+.firstHeading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Features section ── */
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 3840px;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+.content h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.content ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+  
+    
 
 }
 
-.content{
+.content li {
+  
+}
 
-   
-    width: 100vw;
+/* ── Desktop ── */
+@media (min-width: 600px) {
+  .container {
+    margin-top: 4rem;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .heading {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+  }
+}
+
+/* ── 5000px+ ── */
+@media (min-width: 5000px) {
+  :root {
+    font-size: 105px;
+  }
+
+  .content {
+    width: calc(3840px * 1.05); /* ✅ px unit fixed */
+  }
 }
