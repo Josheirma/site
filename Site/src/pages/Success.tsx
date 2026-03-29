@@ -1,8 +1,12 @@
+import styles from '../styles/success.module.css';
+
 export default function Success() {
   return (
-    <div style={{ color: "#fff", padding: "2rem", textAlign: "center" }}>
-      <h3>Payment Successful!</h3>
-      <p>Check your email for your license key.</p>
+    <div>
+      <div className={styles.wrapper}>
+        <div style={{ fontSize: "1.5rem" }}>Payment Successful!</div>
+        <div style={{ fontSize: "1.15rem" }}>Check your email for your license key.</div>
+      </div>
     </div>
   );
 }

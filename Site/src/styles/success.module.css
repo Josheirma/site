@@ -1,0 +1,12 @@
+/* Success.module.css */
+.wrapper {
+  color: #fff;
+  padding-top: 14rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding-top: 4rem;
+  }
+}
