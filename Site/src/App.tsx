@@ -39,6 +39,7 @@ function App() {
           <Route path="/terms" element={< Terms/>} />
           <Route path="/privacy" element={< Privacy/>} />
           <Route path="/features" element={< Features/>} />
+          <Route path="/faq" element = {<Faq/>}/>
           
           
           {/* <Route path="/" element={< />} />
