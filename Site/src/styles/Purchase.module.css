@@ -1,33 +1,23 @@
 .page {
   min-height: 100vh;
   display: flex;
-  margin-top: 14rem;
   justify-content: center;
-  background-color: aqua;
-  
+  margin-top: 14rem;
 }
 
 .emailBox {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 100%;             /* changed: fill available space up to max-width */
+  width: 100%;
   max-width: 37.5rem;
   text-align: center;
-}
-
-.emailButton{
-  width:7rem;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
 }
 
 .emailHeading {
   font-size: 1.125rem;
   font-weight: 600;
   color: white;
-  
 }
 
 .emailPara {
@@ -71,6 +61,9 @@
   background: white;
   color: black;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .emailButton:hover {
@@ -78,20 +71,13 @@
 }
 
 @media (min-width: 600px) {
-
-    .page {   
-  margin-top: 4rem;
-}
-}
-
-
-@media (min-width: 5000px){
-:root {
-    font-size: 105px; /* freezes at the value reached at 5000px */
+  .page {
+    margin-top: 4rem;
   }
-
-  .content {
-  width: calc(3840 * 1.05)
 }
 
+@media (min-width: 5000px) {
+  :root {
+    font-size: 105px;
+  }
 }

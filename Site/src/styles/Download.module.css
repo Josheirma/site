@@ -1,89 +1,64 @@
-/* download_page.module.css */
-
-/* ── Wrapper ── */
 .wrapper {
   display: flex;
-  justify-content: center;   /* centers the whole block */
+  justify-content: center;
   width: 100vw;
-  max-width: 7680px;
- 
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
   background-color: #0b0c0e;
 }
 
-
-/* ── Heading Container ── */
 .container {
   width: 100%;
-  max-width: 2000px;          /* 👈 key: readable width */
+  max-width: 2000px;
   display: flex;
   flex-direction: column;
-  margin-top:  14rem;
-  
+  margin-top: 14rem;
 }
 
 .heading {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  
 }
 
-/* ── Content Card ── */
 .content {
   max-width: 100%;
- 
   display: flex;
   flex-direction: column;
-  /* gap: 1.5rem; */
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  
-
-  width: 3840px;
-  max-width: 100%;         
-  color: #f0ede6;           
- 
-  
-  text-align: left;
-   
-  
+  color: #f0ede6;
 }
 
-/* ── Lists ── */
 .content ul {
   padding-left: 1.25rem;
   margin: 0;
 }
 
 .content h2 {
-  margin-bottom: 1rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 600;
 }
+
 .content p {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
-/* ── Email Links ── */
 .rightColumn {
   color: #3b82f6;
   text-decoration: underline;
   margin-bottom: 1.5rem;
 }
 
-/* ── Download Button Row ── */
 .buttonRow {
   display: flex;
   justify-content: left;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  margin-top: 1.5rem; 
 }
 
-/* ── Download Button ── */
 .downloadButton {
   background-color: #3b82f6;
   color: #fff;
@@ -95,17 +70,15 @@
   transition: background 0.2s;
 }
 
-.downloadButton2{
-margin-top: 1.5rem;
-margin-bottom: .5rem;
-
+.downloadButton2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .downloadButton:hover {
   background-color: #2563eb;
 }
 
-/* ── Status Message ── */
 .status {
   text-align: center;
   color: #3b82f6;
@@ -113,17 +86,15 @@ margin-bottom: .5rem;
   margin-top: 0.75rem;
 }
 
-/* ── Mobile-first Layout ── */
 .row {
   display: flex;
-  flex-direction: column; /* stack headings and links */
+  flex-direction: column;
   gap: 0.25rem;
 }
 
-/* ── Desktop Layout (≥600px) ── */
 @media (min-width: 600px) {
-  .wrapper {
-    
+  .container {
+    margin-top: 4rem;
   }
 
   .heading {
@@ -132,7 +103,6 @@ margin-bottom: .5rem;
 
   .content {
     font-size: 1.05rem;
-    
   }
 
   .downloadButton {
@@ -142,31 +112,12 @@ margin-bottom: .5rem;
 
   .row {
     flex-direction: row;
-    align-items: flex-start; /* align top of links with heading */
+    align-items: flex-start;
   }
-
-  .container{
-  margin-top:4rem;
 }
 
-.content h2 {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-.content p {
-  margin-bottom: 0rem;
-}
-}
-
-/*Then to freeze it at 5000px+, calculate what 2.1vw is at 5000px → 2.1 * 50 = 105px, then lock it:*/
-@media (min-width: 5000px){
-:root {
-    font-size: 105px; /* freezes at the value reached at 5000px */
+@media (min-width: 5000px) {
+  :root {
+    font-size: 105px;
   }
-
-  .content {
-  width: calc(3840 * 1.05)
 }
-
-}
-

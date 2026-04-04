@@ -6,7 +6,7 @@ const Purchase = () => {
 
   return (
     <div style={{ padding: "2rem" }}>
-      <h1>Purchase</h1>
+      <h2>Purchase</h2>
       <p>Buy this product for $59.99</p>
 
       <PayPalButtons

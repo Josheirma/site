@@ -8,24 +8,24 @@ const footerLinks = {
   Product: [
     { label: 'Home',      to: '/home'     },
     { label: 'Features',  to: '/features' },
-    { label: 'Purchase',  to: '/Purchase' },
-    { label: 'Download',  to: '/Download' },
-    { label: 'Changelog', to: '/Changelog'         },
+    { label: 'Purchase',  to: '/purchase' },
+    { label: 'Download',  to: '/download' },
+    { label: 'Changelog', to: '/changelog'         },
   ],
   Support: [
-    { label: 'Docs',    to: '/Docs' },
-    { label: 'FAQ',     to: ''     },
-    { label: 'Contact', to: '#'     },
+    { label: 'Docs',    to: '/docs' },
+    { label: 'FAQ',     to: '/faq'     },
+    { label: 'Contact', to: '/contacts'     },
     
   ],
   Company: [
-    { label: 'About',   to: '#' },
+    { label: 'About',   to: '/about' },
     
   ],
   Legal: [
-    { label: 'Privacy Policy',   to: '#' },
-    { label: 'Terms of Service', to: '#' },
-    { label: 'Refund Policy',    to: '#' },
+    { label: 'Privacy Policy',   to: '/privacy' },
+    { label: 'Terms of Service', to: '/terms' },
+    { label: 'Refund Policy',    to: '/refund' },
   ],
 };
 

@@ -1,29 +1,22 @@
-
 .homeWrapper {
-  /* padding: 0 5%;  */
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
   justify-content: center;
-  /* gap: 1.5rem; */
   overflow: hidden;
-  /* margin-top: 14rem; */
-  /* box-sizing: border-box;  */
   width: 100vw;
-  max-width: 7680px;
-    padding-left: 1rem;
-  padding-right: 1rem;
-
+  padding: 0 1rem;
 }
 
+.container {
+  width: 100%;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14rem;
+}
 
 .title {
-  /* font-size: 1.5rem; */
   font-weight: bold;
-   
   margin-bottom: 1.5rem;
-  margin-top: 0rem;
-  
 }
 
 .titleWord {
@@ -34,42 +27,14 @@
   margin: 0;
 }
 
-
-
-/* .titleWord {
-  display: block;
-  text-align: center;
-  
-} */
-
-.content{
-  width: 3840px;
-  max-width: 100%; 
-  
-  
-  
+.content {
+  max-width: 100%;
 }
 
-.container{
-
-  width: 100%;
-  max-width: 2000px;          /* 👈 key: readable width */
-  display: flex;
-  flex-direction: column;
-  margin-top:  14rem;
-}
-
-
-/* ── Feature grid ── */
 .featureGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  width: 100%;
-  justify-content: center;
-}
-
-.featureGrid > div {
   width: 100%;
 }
 
@@ -77,16 +42,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
- 
 }
 
 .featureHeading {
- 
   font-size: 1.125rem;
   font-weight: 600;
   color: white;
-  
-  
 }
 
 .featurePara {
@@ -96,78 +57,42 @@
   color: #aaa;
 }
 
-/* ── Divider ── */
 .divider {
   width: 100%;
   max-width: 56.25rem;
   border-top: 0.0625rem solid #e0e0e0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
-/* ── Left col / Right col rows ── */
 .sideCol {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   width: 100%;
   justify-items: center;
- 
-  
 }
 
 .sideItem {
   width: 100%;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
-/* ── Image row ── */
 .panDragWrapper {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 37.5rem;
-  margin-inline: auto; /* ← centers the wrapper itself */
+  margin-inline: auto;
 }
 
-
-
-/* ── Desktop ── */
 @media (min-width: 600px) {
-  .content {
-    
+  .container {
+    margin-top: 4rem;
   }
-
-  /* Optional: align headings and content in a grid */
-  .row {
-    display: grid;
-    grid-template-columns: max-content 1fr; /* heading on left, content fills right */
-    column-gap: 1rem;
-    /* align-items: start; */
-    
-  }
-
-  .rightColumn {
-    text-align: left;
-  }
-
-  .container{
-     margin-top:4rem; 
-  }
-
-   .homeWrapper{
-    /* margin-top: 4rem; */
-  } 
 }
 
-
-@media (min-width: 5000px){
-:root {
-    font-size: 105px; /* freezes at the value reached at 5000px */
+@media (min-width: 5000px) {
+  :root {
+    font-size: 105px;
   }
-
-  .content {
-  width: calc(3840px * 1.05)
-}
-
 }

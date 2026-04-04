@@ -1,119 +1,82 @@
-/* ── Wrapper ── */
 .wrapper {
   display: flex;
-  justify-content: center;   /* centers the whole block */
+  justify-content: center;
   width: 100vw;
-  max-width: 7680px;
-   padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 
-
-/* ── Heading container ── */
 .container {
   display: flex;
-  margin-bottom: 1rem;
-  padding-top: 14rem;
-  width: 100%;
-  max-width: 2000px;          /* 👈 key: readable width */
   flex-direction: column;
+  width: 100%;
+  max-width: 2000px;
+  padding-top: 14rem;
+  margin-bottom: 1rem;
 }
 
-/* ── Page heading ── */
 .heading {
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
+ 
   margin-bottom: 1.5rem;
+  
 }
 
-/* ── Content area ── */
 .content {
   display: flex;
-  flex-direction: column;   /* mobile: stacked layout */
-  gap: 1rem;                /* spacing between sections */
-  max-width: 100%;         /* readable width */
-  /* margin: 0 auto;           */
-  
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
   color: #f0ede6;
   font-size: 1rem;
   line-height: 1.5;
-  width: 3840px;
 }
 
-/* Section headings */
 .content h2 {
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-/* Paragraphs */
 .content p {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* Lists */
 .content ul {
   margin-left: 1.25rem;
   list-style-type: disc;
-  color: #f0ede6;
   margin-bottom: 1rem;
 }
 
-/* Links */
 .content a {
-  color: #3b82f6;          /* WorkMate blue */
+  color: #3b82f6;
   text-decoration: underline;
 }
 
-/* Email / inline link styling */
 .rightColumn {
   display: inline-block;
-  text-align: left;
   font-size: 1rem;
   color: #3b82f6;
   text-decoration: underline;
   word-break: break-word;
 }
 
-/* ── Desktop layout (>=600px) ── */
 @media (min-width: 600px) {
-  .content {
-    padding-left: 0;
-    padding-right: 0;
+  .container {
+    padding-top: 4rem;
   }
 
-  /* Optional: align headings + content like Contacts */
   .row {
     display: grid;
     grid-template-columns: max-content 1fr;
     column-gap: 1rem;
     align-items: start;
   }
-
-  .rightColumn {
-    text-align: left;
-  }
-
-  .wrapper{
-    /* padding-top: 5rem; */
-  }
-
-  .container{
-    padding-top: 4rem;
-  }
 }
 
-
-@media (min-width: 5000px){
-:root {
-    font-size: 105px; /* freezes at the value reached at 5000px */
+@media (min-width: 5000px) {
+  :root {
+    font-size: 105px;
   }
-
-  .content {
-  width: calc(3840 * 1.05)
-}
-
 }

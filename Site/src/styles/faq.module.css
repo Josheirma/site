@@ -1,12 +1,8 @@
-/* ── Layout ── */
-
 .wrapper {
   display: flex;
   justify-content: center;
   width: 100vw;
-  max-width: 7680px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 
 .container {
@@ -15,55 +11,35 @@
   max-width: 2000px;
   width: 100%;
   margin-top: 14rem;
-  margin-bottom: 0rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  width: 3840px;
-  padding: 1rem;
-  padding-bottom: .9rem;
+  padding: 1rem 1rem 0.0rem;
 }
-
-/* ── Heading ── */
 
 .heading {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: 0rem;
-}
-
-/* ── Section divider between topics ── */
-
-
-/* ── Sections ── */
-
-.section {
-  
 }
 
 .h2 {
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.5;
-  margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .h2Secondary {
   margin-top: 0;
 }
-/* ── Q&A blocks ── */
-.p2{
-    margin-top: 1rem;
-}
-.p1,
-.p2,
-.lastP {
-  
+
+.p2 {
+  margin-top: 1rem;
 }
 
 .lastP {
@@ -75,15 +51,10 @@
   line-height: 1.5;
 }
 
-.answer {
-  line-height: 1.5;
-}
-
+.answer,
 .answerLast {
   line-height: 1.5;
-  
 }
-/* ── Responsive ── */
 
 @media (min-width: 600px) {
   .container {
@@ -94,9 +65,5 @@
 @media (min-width: 5000px) {
   :root {
     font-size: 105px;
-  }
-
-  .content {
-    width: calc(3840px * 1.05);
   }
 }
