@@ -17,6 +17,7 @@ import Terms from './pages/Terms.tsx';
 import Privacy from  './pages/Privacy.tsx';
 import Download_Page from './pages/Download_Page.tsx';
 import Features from './pages/Features.tsx';
+import Failed from './pages/Failed.tsx';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             <Route path="/purchase" element={<Purchase />} />
             <Route path="/download_page" element={<Download_Page/>}/>
             <Route path="/download" element={<Download />} />
-            
+            <Route path="/failed" element={<Failed />} />
             <Route path="/success" element={<Success />} />
             <Route path="/about" element={<About />} />
             <Route path="/changelog" element={<Changelog />} />
