@@ -1,6 +1,6 @@
-//
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { PayPalScriptProvider } from "@paypal/react-paypal-js"; // 👈 ADD THIS
 import './styles/global.css';
 import './App.css'
 import Layout from './components/Layout.tsx';
@@ -20,35 +20,36 @@ import Features from './pages/Features.tsx';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
-          <Route path="/purchase" element={<Purchase />} />
-          <Route path="/download_page" element={<Download_Page/>}/>
-          <Route path="/download" element={<Download />} />
-          
-          <Route path="/success" element={<Success />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/changelog" element={<Changelog />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/docs" element={<Docs/>} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/refund" element={<Refund />} />
-          <Route path="/terms" element={< Terms/>} />
-          <Route path="/privacy" element={< Privacy/>} />
-          <Route path="/features" element={< Features/>} />
-          <Route path="/faq" element = {<Faq/>}/>
-          
-          
-          {/* <Route path="/" element={< />} />
-          <Route path="/" element={< />} />
-          <Route path="/" element={< />} /> */}
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <PayPalScriptProvider
+      options={{
+        "client-id": "AblCgQ0JJTi66wvx4z1lbxJXYCnFI4j4hsN_1dGrpmR_z7fEz05I48R4MGO-66qT08W5J6s_lsWa8UXe", // 🔑 replace this
+        currency: "USD",
+      }}
+    >
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="/purchase" element={<Purchase />} />
+            <Route path="/download_page" element={<Download_Page/>}/>
+            <Route path="/download" element={<Download />} />
+            
+            <Route path="/success" element={<Success />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/changelog" element={<Changelog />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/docs" element={<Docs/>} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/refund" element={<Refund />} />
+            <Route path="/terms" element={<Terms/>} />
+            <Route path="/privacy" element={<Privacy/>} />
+            <Route path="/features" element={<Features/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </PayPalScriptProvider>
   )
 }
 
-export default App
+export default App;

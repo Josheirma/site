@@ -1,56 +1,51 @@
-import { useEffect, useState } from "react";
-import styles from '../styles/Purchase.module.css';
+import { PayPalButtons } from "@paypal/react-paypal-js";
+import { useNavigate } from "react-router-dom";
 
-export default function Purchase() {
-  const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
-  const [message, setMessage] = useState("");
-
-  async function handleSubmit(): Promise<void> {
-    setStatus("loading");
-    try {
-      const res = await fetch("http://localhost:3000/api/create-checkout-session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-      });
-
-      const data: { url?: string; error?: string } = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Something went wrong.");
-
-      window.location.href = data.url!;
-    } catch (err) {
-      setStatus("error");
-      setMessage(err instanceof Error ? err.message : "Something went wrong.");
-    }
-  }
-
-  // 👇 auto-run when component loads
-  useEffect(() => {
-    handleSubmit();
-  }, []);
+const Purchase = () => {
+  const navigate = useNavigate();
 
   return (
-    <div className={styles.emailBox}>
-      <h2 className={styles.emailHeading}>Redirecting to checkout...</h2>
+    <div style={{ padding: "2rem" }}>
+      <h1>Purchase</h1>
+      <p>Buy this product for $59.99</p>
 
-      {status === "loading" && (
-        <p className={styles.emailPara}>Please wait...</p>
-      )}
+      <PayPalButtons
+        style={{ layout: "vertical" }}
+        
+        createOrder={() => {
+          return fetch("http://localhost:3000/api/paypal/create-order", {
+            method: "POST",
+          })
+            .then((res) => res.json())
+            .then((data) => data.id);
+        }}
 
-      {status === "error" && (
-        <>
-          <p style={{ color: "#f87171", fontSize: "0.875rem" }}>
-            {message}
-          </p>
+        onApprove={(data) => {
+          return fetch("http://localhost:3000/api/paypal/capture-order", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              orderID: data.orderID,
+            }),
+          })
+            .then((res) => res.json())
+            .then((details) => {
+              console.log("Payment complete:", details);
 
-          {/* optional retry */}
-          <button
-            className={styles.emailButton}
-            onClick={handleSubmit}
-          >
-            Try Again
-          </button>
-        </>
-      )}
+              // 👉 redirect to your success page
+              navigate("/success");
+            });
+        }}
+
+        onError={(err) => {
+          console.error("PayPal error:", err);
+          alert("Something went wrong with payment.");
+        }}
+      />
     </div>
   );
-}
+};
+
+export default Purchase;
