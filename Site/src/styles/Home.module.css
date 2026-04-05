@@ -1,8 +1,8 @@
 .homeWrapper {
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  width: 100vw;
+  /* overflow: hidden; */
+  width: 100%;
   padding: 0 1rem;
 }
 

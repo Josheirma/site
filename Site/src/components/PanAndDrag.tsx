@@ -86,9 +86,9 @@ export default function PanAndDrag() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.heading}>{images[currentIndex].title}</div>
+      <div className={styles.title}>{images[currentIndex].title}</div>
 
-        <div ref={wrapperRef} className={styles.content}>
+      <div ref={wrapperRef} className={styles.content}>
         <div
           className={`${styles.circle} ${isDragging ? styles.grabbing : styles.grab}`}
           style={{ width: size, height: size }}
