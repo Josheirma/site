@@ -1,23 +1,32 @@
 .wrapper {
   display: flex;
+  justify-content: center;
+  width: 100vw;
+  color: #fff;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   padding: 1.25rem;
-  width: 100%;
+  padding-top: 1rem;
   box-sizing: border-box;
-  background: transparent;
-  font-family: 'Georgia', serif;
 }
 
-.title {
+.heading {
   font-size: 1.25rem;
   font-weight: 600;
-  color: white;
   letter-spacing: 0.05em;
+  
 }
 
-.imageWrapper {
+.content {
   width: clamp(250px, calc(10px + 30.88vw), 570px);
   align-self: center;
   display: flex;
@@ -113,4 +122,16 @@
   letter-spacing: 0.15em;
   font-family: monospace;
   margin: 0;
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 5000px) {
+  :root {
+    font-size: 105px;
+  }
 }
