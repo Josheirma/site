@@ -40,7 +40,7 @@
   max-width: 100%;        
   color: #f0ede6;
   font-size: 1rem;
-  line-height: 1.5;
+ 
   text-align: left;
   width: 3840;
   /* margin-top: 2rem; */
@@ -57,7 +57,7 @@
 /* Paragraph text */
 .content p {
   font-size: 1rem;
-  line-height: 1.5;
+ 
   color: #f0ede6;
 }
 

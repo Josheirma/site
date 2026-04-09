@@ -23,13 +23,13 @@
 .heading {
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1;
 }
+  
 
 .h2 {
   font-size: 1.3rem;
   font-weight: 600;
-  line-height: 1.5;
+  
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -48,12 +48,12 @@
 
 .strong {
   font-weight: 600;
-  line-height: 1.5;
+  
 }
 
 .answer,
 .answerLast {
-  line-height: 1.5;
+  
 }
 
 @media (min-width: 600px) {

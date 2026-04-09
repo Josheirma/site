@@ -40,7 +40,7 @@
     padding-right: 1rem;
     color: #f0ede6;
     font-family: 'DM Sans', sans-serif;
-    line-height: 1.5;
+    
     margin-bottom: 1rem;
     ;
 }
@@ -58,7 +58,7 @@
 /* ── Paragraphs ── */
 .content p {
     font-size: 1rem;
-    line-height: 1.6;
+    
     margin-top: 0;
     margin-bottom: 0.5rem;
     color: #cfcfcf;
@@ -68,7 +68,7 @@
 .content ul {
     padding-left: 1.25rem;
     list-style-type: disc;
-    line-height: 1.6;
+    
     margin-top: 0;
     margin-bottom: 0;
 }
