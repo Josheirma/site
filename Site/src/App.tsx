@@ -23,7 +23,7 @@ function App() {
   return (
     <PayPalScriptProvider
       options={{
-        "client-id": "AblCgQ0JJTi66wvx4z1lbxJXYCnFI4j4hsN_1dGrpmR_z7fEz05I48R4MGO-66qT08W5J6s_lsWa8UXe", // 🔑 replace this
+        "client-id": import.meta.env.VITE_PAYPAL_CLIENT_ID,
         currency: "USD",
       }}
     >

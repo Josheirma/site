@@ -17,9 +17,10 @@ export default function Privacy() {
         <p>We only collect the information necessary to provide our service, including:</p>
         <ul>
           <li>Email addresses for licensing and support purposes.</li>
-          <li>Payment information through secure third-party processors (Stripe, PayPal).</li>
-          <li>Technical data, such as crash reports or device information, to improve the software.</li>
-        </ul>
+          <li>Payment information through secure third-party processors (PayPal).</li>
+          <li>Machine ID for licensing and support purposes.</li>
+         </ul>During the purchase process, you may optionally consent to 
+              receiving notifications about future WorkMate updates and products. </ul>
 
         <h2>2. How We Use Your Information</h2>
         <ul>
@@ -34,7 +35,7 @@ export default function Privacy() {
           We do not sell or rent your data. Your information may be shared only with trusted third parties:
         </p>
         <ul>
-          <li>Payment processors (e.g., Stripe) to handle purchases.</li>
+          <li>Payment processors (e.g., PayPal) to handle purchases.</li>
           <li>Cloud service providers for secure data storage.</li>
           <li>Legal authorities if required by law.</li>
         </ul>
