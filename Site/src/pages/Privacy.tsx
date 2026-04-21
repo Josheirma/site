@@ -19,8 +19,9 @@ export default function Privacy() {
           <li>Email addresses for licensing and support purposes.</li>
           <li>Payment information through secure third-party processors (PayPal).</li>
           <li>Machine ID for licensing and support purposes.</li>
-         </ul>During the purchase process, you may optionally consent to 
-              receiving notifications about future WorkMate updates and products. </ul>
+          <li>During the purchase process, you may optionally consent to 
+              receiving notifications about future WorkMate updates and products. </li>
+        </ul>
 
         <h2>2. How We Use Your Information</h2>
         <ul>

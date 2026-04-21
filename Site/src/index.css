@@ -34,7 +34,7 @@ body {
 
 /* Then to freeze it at 5000px+, calculate what 2.1vw is at 5000px → 2.1 * 50 = 105px, then lock it: */
 html{
-font-size: clamp(.9rem, 2.1vw, 4.7vw);
+ font-size: clamp(.9rem, 1.5vw, 4.7vw); 
 
 
 }

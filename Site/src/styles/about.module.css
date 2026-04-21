@@ -7,10 +7,11 @@
 
 .container {
   width: 100%;
-  max-width: 2000px;
+  max-width: 80vw;
   display: flex;
   flex-direction: column;
-  margin-top: 14rem;
+  margin-top: 12rem;
+  
 }
 
 .heading {
@@ -23,7 +24,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 100%;
+  /* max-width: 100%; */
   color: #f0ede6;
   font-size: 1rem;
   
@@ -55,7 +56,18 @@
   margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) {
+
+/* @media (min-width: 600px) {
+
+  html {
+    font-size: 2.125rem;
+  }
+
+} */
+
+
+
+/* @media (min-width: 1000px) {
   .row {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -65,10 +77,25 @@
   .container {
     margin-top: 4rem;
   }
+} */
+
+ 
+
+@media (min-width: 600px) {
+
+.container {
+    margin-top: 4rem;
+   
+  }
+
+  html{
+    /* font-size: 2.125rem; */
+  }
 }
+
 
 @media (min-width: 5000px) {
   :root {
-    font-size: 105px;
+    /* font-size: 105px; */
   }
 }
