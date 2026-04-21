@@ -96,7 +96,7 @@ export default function PanAndDrag() {
   const goLeft  = () => setCurrentIndex((i) => (i - 1 + images.length) % images.length);
   const goRight = () => setCurrentIndex((i) => (i + 1) % images.length);
 
-  const size = diameter || "min(25vw, 470px)";
+  const size = diameter || "min(32vw, 403px)";
 
   return (
     <div className={styles.wrapper}>
