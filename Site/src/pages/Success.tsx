@@ -13,7 +13,7 @@ export default function Success() {
           {serial ? (
             <>
               <p>Your license key:</p>
-              <strong>{serial}</strong>
+              <strong>2222</strong>
               <p>A copy has also been sent to your email.</p>
             </>
           ) : (
@@ -23,4 +23,4 @@ export default function Success() {
       </div>
     </div>
   );
-}
+}Wopr
