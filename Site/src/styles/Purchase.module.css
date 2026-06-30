@@ -5,6 +5,18 @@
   margin-top: 14rem;
 }
 
+.text{
+  margin-top: 3rem;
+}
+
+.gap{
+  margin-bottom: 2rem;
+}
+.paragraph{
+
+  margin-bottom: 3rem;
+}
+
 .emailBox {
   display: flex;
   flex-direction: column;

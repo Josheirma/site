@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { PayPalButtons } from "@paypal/react-paypal-js"
 import { useNavigate } from "react-router-dom"
+import styles from '../styles/Purchase.module.css';
 
 // Set VITE_PUBLIC_API_URL=http://localhost:3000 in .env.local (already present)
 // Set VITE_PUBLIC_API_URL=https://api.yourdomain.com for production
@@ -11,15 +12,20 @@ const Purchase = () => {
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div style={{ padding: "3rem" }}>
       <h2>Purchase</h2>
+      <div className ={styles.text} >
+      <div className ={styles.gap} >
       <p>Buy this product for $59.99</p>
-      <p>
-        Upon completing your purchase, your license key will be displayed on
-        screen and sent to your email. If you are disconnected before this page
-        fully loads, your key will be delivered to your email as soon as
-        possible.
-      </p>
+      
+        </div>
+       
+
+          <div className ={styles.paragraph} >
+        
+        After your purchase completes, your license key will appear on this page and be emailed to you. If you're disconnected before the page fully loads, don't worry — your key will still be sent to your email shortly.
+      </div>
+      </div>
 
       {errorMsg && (
         <p style={{ color: "#f87171", marginBottom: "1rem", fontSize: "0.9rem" }}>
