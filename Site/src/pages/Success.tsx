@@ -23,4 +23,4 @@ export default function Success() {
       </div>
     </div>
   );
-}Wopr
+}
