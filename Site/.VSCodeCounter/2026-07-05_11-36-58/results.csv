@@ -1,0 +1,58 @@
+"filename", "language", "JSON with Comments", "HTML", "JSON", "TypeScript", "JavaScript", "PostCSS", "TypeScript JSX", "Markdown", "XML", "comment", "blank", "total"
+"c:\MAMP\htdocs\site\Site\README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 14, 74
+"c:\MAMP\htdocs\site\Site\eslint.config.js", "JavaScript", 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 2, 24
+"c:\MAMP\htdocs\site\Site\index.html", "HTML", 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 1, 14
+"c:\MAMP\htdocs\site\Site\package-lock.json", "JSON", 0, 0, 3435, 0, 0, 0, 0, 0, 0, 0, 1, 3436
+"c:\MAMP\htdocs\site\Site\package.json", "JSON", 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 1, 34
+"c:\MAMP\htdocs\site\Site\public\vite.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1
+"c:\MAMP\htdocs\site\Site\src\App.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 1, 43
+"c:\MAMP\htdocs\site\Site\src\App.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 3, 57
+"c:\MAMP\htdocs\site\Site\src\assets\react.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1
+"c:\MAMP\htdocs\site\Site\src\components\Layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 79, 0, 0, 8, 24, 111
+"c:\MAMP\htdocs\site\Site\src\components\PanAndDrag.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 112, 0, 0, 14, 26, 152
+"c:\MAMP\htdocs\site\Site\src\index.css", "PostCSS", 0, 0, 0, 0, 0, 62, 0, 0, 0, 4, 22, 88
+"c:\MAMP\htdocs\site\Site\src\main.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 2, 11
+"c:\MAMP\htdocs\site\Site\src\pages\About.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 34, 0, 0, 0, 8, 42
+"c:\MAMP\htdocs\site\Site\src\pages\Changelog.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 32, 0, 0, 2, 8, 42
+"c:\MAMP\htdocs\site\Site\src\pages\Contacts.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 3, 23
+"c:\MAMP\htdocs\site\Site\src\pages\Docs.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 95, 0, 0, 8, 19, 122
+"c:\MAMP\htdocs\site\Site\src\pages\Docs_old.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 13, 0, 0, 46, 40, 99
+"c:\MAMP\htdocs\site\Site\src\pages\Download.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 61, 0, 0, 6, 14, 81
+"c:\MAMP\htdocs\site\Site\src\pages\Download_Page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 108, 0, 0, 2, 18, 128
+"c:\MAMP\htdocs\site\Site\src\pages\Failed.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 1, 14
+"c:\MAMP\htdocs\site\Site\src\pages\Faq.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 190, 0, 0, 5, 20, 215
+"c:\MAMP\htdocs\site\Site\src\pages\Features.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 7, 42
+"c:\MAMP\htdocs\site\Site\src\pages\Home.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 70, 0, 0, 13, 18, 101
+"c:\MAMP\htdocs\site\Site\src\pages\LicenseCheckout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 12, 95
+"c:\MAMP\htdocs\site\Site\src\pages\Privacy.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 66, 0, 0, 1, 13, 80
+"c:\MAMP\htdocs\site\Site\src\pages\Purchase.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 65, 0, 0, 2, 15, 82
+"c:\MAMP\htdocs\site\Site\src\pages\Refund.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 61, 0, 0, 0, 9, 70
+"c:\MAMP\htdocs\site\Site\src\pages\Success.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 2, 26
+"c:\MAMP\htdocs\site\Site\src\pages\Terms.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 12, 77
+"c:\MAMP\htdocs\site\Site\src\routes\paypal.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\MAMP\htdocs\site\Site\src\styles\Download.module.css", "PostCSS", 0, 0, 0, 0, 0, 103, 0, 0, 0, 0, 20, 123
+"c:\MAMP\htdocs\site\Site\src\styles\Home.module.css", "PostCSS", 0, 0, 0, 0, 0, 83, 0, 0, 0, 1, 15, 99
+"c:\MAMP\htdocs\site\Site\src\styles\Layout.module.css", "PostCSS", 0, 0, 0, 0, 0, 222, 0, 0, 0, 0, 29, 251
+"c:\MAMP\htdocs\site\Site\src\styles\PanAndDrag.module.css", "PostCSS", 0, 0, 0, 0, 0, 131, 0, 0, 0, 12, 26, 169
+"c:\MAMP\htdocs\site\Site\src\styles\Purchase.module.css", "PostCSS", 0, 0, 0, 0, 0, 80, 0, 0, 0, 0, 15, 95
+"c:\MAMP\htdocs\site\Site\src\styles\about.module.css", "PostCSS", 0, 0, 0, 0, 0, 54, 0, 0, 0, 20, 23, 97
+"c:\MAMP\htdocs\site\Site\src\styles\changelog.module.css", "PostCSS", 0, 0, 0, 0, 0, 68, 0, 0, 0, 0, 13, 81
+"c:\MAMP\htdocs\site\Site\src\styles\contacts.module.css", "PostCSS", 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 10, 71
+"c:\MAMP\htdocs\site\Site\src\styles\docs.module.css", "PostCSS", 0, 0, 0, 0, 0, 88, 0, 0, 0, 14, 25, 127
+"c:\MAMP\htdocs\site\Site\src\styles\download_page.module.css", "PostCSS", 0, 0, 0, 0, 0, 71, 0, 0, 0, 0, 12, 83
+"c:\MAMP\htdocs\site\Site\src\styles\failed.module.css", "PostCSS", 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 5, 37
+"c:\MAMP\htdocs\site\Site\src\styles\faq.module.css", "PostCSS", 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 15, 69
+"c:\MAMP\htdocs\site\Site\src\styles\features.module.css", "PostCSS", 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 16, 86
+"c:\MAMP\htdocs\site\Site\src\styles\global - Copy.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 1, 46
+"c:\MAMP\htdocs\site\Site\src\styles\global.css", "PostCSS", 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 11, 48
+"c:\MAMP\htdocs\site\Site\src\styles\privacy.module.css", "PostCSS", 0, 0, 0, 0, 0, 81, 0, 0, 0, 10, 33, 124
+"c:\MAMP\htdocs\site\Site\src\styles\refund.module.css", "PostCSS", 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 15, 82
+"c:\MAMP\htdocs\site\Site\src\styles\shared.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\MAMP\htdocs\site\Site\src\styles\success.module.css", "PostCSS", 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 5, 36
+"c:\MAMP\htdocs\site\Site\src\styles\terms.module.css", "PostCSS", 0, 0, 0, 0, 0, 72, 0, 0, 0, 0, 14, 86
+"c:\MAMP\htdocs\site\Site\tsconfig.app.json", "JSON", 0, 0, 24, 0, 0, 0, 0, 0, 0, 2, 3, 29
+"c:\MAMP\htdocs\site\Site\tsconfig.json", "JSON with Comments", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"c:\MAMP\htdocs\site\Site\tsconfig.node.json", "JSON", 0, 0, 22, 0, 0, 0, 0, 0, 0, 2, 3, 27
+"c:\MAMP\htdocs\site\Site\vercel.json", "JSON", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"c:\MAMP\htdocs\site\Site\vite.config.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 0, 1, 1, 11
+"Total", "-", 7, 13, 3519, 9, 22, 1467, 1206, 60, 2, 343, 629, 7277

@@ -5,15 +5,15 @@
   margin-top: 14rem;
 }
 
-.text{
+.text {
   margin-top: 3rem;
 }
 
-.gap{
+.gap {
   margin-bottom: 2rem;
 }
-.paragraph{
 
+.paragraph {
   margin-bottom: 3rem;
 }
 
@@ -34,7 +34,6 @@
 
 .emailPara {
   font-size: 1rem;
-  
   color: #aaa;
   margin: 0 0 0.5rem;
 }
@@ -82,11 +81,48 @@
   background: #ddd;
 }
 
+
+/* =========================================================
+   PAYPAL START BUTTON
+   ========================================================= */
+
+.paypalStartButton {
+  width: 100%;
+  max-width: 30rem;
+
+  padding: 1rem;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 0.375rem;
+
+  background: white;
+  color: black;
+
+  cursor: pointer;
+}
+
+.paypalStartButton:hover {
+  background: #ddd;
+}
+
+
+/* =========================================================
+   PURCHASE PAGE
+   ========================================================= */
+
 @media (min-width: 600px) {
   .page {
     margin-top: 4rem;
   }
 }
+
+
+/* =========================================================
+   VERY LARGE SCREENS
+   ========================================================= */
 
 @media (min-width: 5000px) {
   :root {

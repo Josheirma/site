@@ -1,0 +1,177 @@
+
+/* =========================================================
+   FULL-SCREEN EULA PAGE
+   No header
+   No footer
+   No banner
+   ========================================================= */
+
+.eulaPage {
+  position: fixed;
+  inset: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #111;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CENTERED EULA DIALOG
+   ========================================================= */
+
+.eulaDialog {
+  width: min(50rem, 90vw);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  padding: 2.5rem;
+
+  background: #1a1a1a;
+  color: white;
+
+  border-radius: 0.75rem;
+}
+
+
+/* =========================================================
+   EULA TEXT
+   ========================================================= */
+
+.eulaText {
+  flex: 1;
+
+  min-height: 0;
+
+  overflow-y: auto;
+
+  margin: 1.5rem 0;
+  padding: 1rem;
+
+  border: 0.0625rem solid #444;
+  border-radius: 0.375rem;
+
+  line-height: 1.6;
+  
+  height: 2px;
+}
+
+
+/* =========================================================
+   EULA AGREEMENT
+   ========================================================= */
+
+.eulaAgreement {
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+
+  margin: 1rem 0;
+
+  line-height: 1.4;
+
+  cursor: pointer;
+}
+
+.eulaAgreement input {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  margin: 0;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   EULA BUTTONS
+   ========================================================= */
+
+.eulaActions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+.eulaCancel,
+.eulaContinue {
+  padding: 0.75rem 1.5rem;
+
+  border: none;
+  border-radius: 0.375rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* Cancel */
+
+.eulaCancel {
+  background: #444;
+  color: white;
+}
+
+.eulaCancel:hover {
+  background: #555;
+}
+
+
+/* Continue */
+
+.eulaContinue {
+  background: white;
+  color: black;
+}
+
+.eulaContinue:hover:not(:disabled) {
+  background: #ddd;
+}
+
+
+/* Disabled Continue */
+
+.eulaContinue:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+.eulaText::-webkit-scrollbar {
+  width: .6rem;
+}
+
+.eulaText::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 0.5rem;
+}
+
+.eulaText::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 0.5rem;
+}
+
+.eulaText::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

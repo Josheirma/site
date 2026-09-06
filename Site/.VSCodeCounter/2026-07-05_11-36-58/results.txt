@@ -1,0 +1,97 @@
+Date : 2026-07-05 11:36:58
+Directory : c:\MAMP\htdocs\site\Site
+Total : 56 files,  6305 codes, 343 comments, 629 blanks, all 7277 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          5 |      3,519 |          4 |          8 |      3,531 |
+| PostCSS            |         22 |      1,467 |        148 |        327 |      1,942 |
+| TypeScript JSX     |         21 |      1,206 |        190 |        274 |      1,670 |
+| Markdown           |          1 |         60 |          0 |         14 |         74 |
+| JavaScript         |          1 |         22 |          0 |          2 |         24 |
+| HTML               |          1 |         13 |          0 |          1 |         14 |
+| TypeScript         |          2 |          9 |          1 |          2 |         12 |
+| JSON with Comments |          1 |          7 |          0 |          1 |          8 |
+| XML                |          2 |          2 |          0 |          0 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                         | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                            |         56 |      6,305 |        343 |        629 |      7,277 |
+| . (Files)                                                    |         10 |      3,630 |          5 |         27 |      3,662 |
+| public                                                       |          1 |          1 |          0 |          0 |          1 |
+| src                                                          |         45 |      2,674 |        338 |        602 |      3,614 |
+| src (Files)                                                  |          4 |        125 |         46 |         28 |        199 |
+| src\assets                                                   |          1 |          1 |          0 |          0 |          1 |
+| src\components                                               |          2 |        191 |         22 |         50 |        263 |
+| src\pages                                                    |         17 |        952 |        168 |        219 |      1,339 |
+| src\routes                                                   |          1 |          0 |          0 |          1 |          1 |
+| src\styles                                                   |         20 |      1,405 |        102 |        304 |      1,811 |
++--------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                     | language           | code       | comment    | blank      | total      |
++--------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\MAMP\htdocs\site\Site\README.md                           | Markdown           |         60 |          0 |         14 |         74 |
+| c:\MAMP\htdocs\site\Site\eslint.config.js                    | JavaScript         |         22 |          0 |          2 |         24 |
+| c:\MAMP\htdocs\site\Site\index.html                          | HTML               |         13 |          0 |          1 |         14 |
+| c:\MAMP\htdocs\site\Site\package-lock.json                   | JSON               |      3,435 |          0 |          1 |      3,436 |
+| c:\MAMP\htdocs\site\Site\package.json                        | JSON               |         33 |          0 |          1 |         34 |
+| c:\MAMP\htdocs\site\Site\public\vite.svg                     | XML                |          1 |          0 |          0 |          1 |
+| c:\MAMP\htdocs\site\Site\src\App.css                         | PostCSS            |          0 |         42 |          1 |         43 |
+| c:\MAMP\htdocs\site\Site\src\App.tsx                         | TypeScript JSX     |         54 |          0 |          3 |         57 |
+| c:\MAMP\htdocs\site\Site\src\assets\react.svg                | XML                |          1 |          0 |          0 |          1 |
+| c:\MAMP\htdocs\site\Site\src\components\Layout.tsx           | TypeScript JSX     |         79 |          8 |         24 |        111 |
+| c:\MAMP\htdocs\site\Site\src\components\PanAndDrag.tsx       | TypeScript JSX     |        112 |         14 |         26 |        152 |
+| c:\MAMP\htdocs\site\Site\src\index.css                       | PostCSS            |         62 |          4 |         22 |         88 |
+| c:\MAMP\htdocs\site\Site\src\main.tsx                        | TypeScript JSX     |          9 |          0 |          2 |         11 |
+| c:\MAMP\htdocs\site\Site\src\pages\About.tsx                 | TypeScript JSX     |         34 |          0 |          8 |         42 |
+| c:\MAMP\htdocs\site\Site\src\pages\Changelog.tsx             | TypeScript JSX     |         32 |          2 |          8 |         42 |
+| c:\MAMP\htdocs\site\Site\src\pages\Contacts.tsx              | TypeScript JSX     |         20 |          0 |          3 |         23 |
+| c:\MAMP\htdocs\site\Site\src\pages\Docs.tsx                  | TypeScript JSX     |         95 |          8 |         19 |        122 |
+| c:\MAMP\htdocs\site\Site\src\pages\Docs_old.tsx              | TypeScript JSX     |         13 |         46 |         40 |         99 |
+| c:\MAMP\htdocs\site\Site\src\pages\Download.tsx              | TypeScript JSX     |         61 |          6 |         14 |         81 |
+| c:\MAMP\htdocs\site\Site\src\pages\Download_Page.tsx         | TypeScript JSX     |        108 |          2 |         18 |        128 |
+| c:\MAMP\htdocs\site\Site\src\pages\Failed.tsx                | TypeScript JSX     |         13 |          0 |          1 |         14 |
+| c:\MAMP\htdocs\site\Site\src\pages\Faq.tsx                   | TypeScript JSX     |        190 |          5 |         20 |        215 |
+| c:\MAMP\htdocs\site\Site\src\pages\Features.tsx              | TypeScript JSX     |         35 |          0 |          7 |         42 |
+| c:\MAMP\htdocs\site\Site\src\pages\Home.tsx                  | TypeScript JSX     |         70 |         13 |         18 |        101 |
+| c:\MAMP\htdocs\site\Site\src\pages\LicenseCheckout.tsx       | TypeScript JSX     |          0 |         83 |         12 |         95 |
+| c:\MAMP\htdocs\site\Site\src\pages\Privacy.tsx               | TypeScript JSX     |         66 |          1 |         13 |         80 |
+| c:\MAMP\htdocs\site\Site\src\pages\Purchase.tsx              | TypeScript JSX     |         65 |          2 |         15 |         82 |
+| c:\MAMP\htdocs\site\Site\src\pages\Refund.tsx                | TypeScript JSX     |         61 |          0 |          9 |         70 |
+| c:\MAMP\htdocs\site\Site\src\pages\Success.tsx               | TypeScript JSX     |         24 |          0 |          2 |         26 |
+| c:\MAMP\htdocs\site\Site\src\pages\Terms.tsx                 | TypeScript JSX     |         65 |          0 |         12 |         77 |
+| c:\MAMP\htdocs\site\Site\src\routes\paypal.ts                | TypeScript         |          0 |          0 |          1 |          1 |
+| c:\MAMP\htdocs\site\Site\src\styles\Download.module.css      | PostCSS            |        103 |          0 |         20 |        123 |
+| c:\MAMP\htdocs\site\Site\src\styles\Home.module.css          | PostCSS            |         83 |          1 |         15 |         99 |
+| c:\MAMP\htdocs\site\Site\src\styles\Layout.module.css        | PostCSS            |        222 |          0 |         29 |        251 |
+| c:\MAMP\htdocs\site\Site\src\styles\PanAndDrag.module.css    | PostCSS            |        131 |         12 |         26 |        169 |
+| c:\MAMP\htdocs\site\Site\src\styles\Purchase.module.css      | PostCSS            |         80 |          0 |         15 |         95 |
+| c:\MAMP\htdocs\site\Site\src\styles\about.module.css         | PostCSS            |         54 |         20 |         23 |         97 |
+| c:\MAMP\htdocs\site\Site\src\styles\changelog.module.css     | PostCSS            |         68 |          0 |         13 |         81 |
+| c:\MAMP\htdocs\site\Site\src\styles\contacts.module.css      | PostCSS            |         61 |          0 |         10 |         71 |
+| c:\MAMP\htdocs\site\Site\src\styles\docs.module.css          | PostCSS            |         88 |         14 |         25 |        127 |
+| c:\MAMP\htdocs\site\Site\src\styles\download_page.module.css | PostCSS            |         71 |          0 |         12 |         83 |
+| c:\MAMP\htdocs\site\Site\src\styles\failed.module.css        | PostCSS            |         32 |          0 |          5 |         37 |
+| c:\MAMP\htdocs\site\Site\src\styles\faq.module.css           | PostCSS            |         54 |          0 |         15 |         69 |
+| c:\MAMP\htdocs\site\Site\src\styles\features.module.css      | PostCSS            |         70 |          0 |         16 |         86 |
+| c:\MAMP\htdocs\site\Site\src\styles\global - Copy.css        | PostCSS            |          0 |         45 |          1 |         46 |
+| c:\MAMP\htdocs\site\Site\src\styles\global.css               | PostCSS            |         37 |          0 |         11 |         48 |
+| c:\MAMP\htdocs\site\Site\src\styles\privacy.module.css       | PostCSS            |         81 |         10 |         33 |        124 |
+| c:\MAMP\htdocs\site\Site\src\styles\refund.module.css        | PostCSS            |         67 |          0 |         15 |         82 |
+| c:\MAMP\htdocs\site\Site\src\styles\shared.module.css        | PostCSS            |          0 |          0 |          1 |          1 |
+| c:\MAMP\htdocs\site\Site\src\styles\success.module.css       | PostCSS            |         31 |          0 |          5 |         36 |
+| c:\MAMP\htdocs\site\Site\src\styles\terms.module.css         | PostCSS            |         72 |          0 |         14 |         86 |
+| c:\MAMP\htdocs\site\Site\tsconfig.app.json                   | JSON               |         24 |          2 |          3 |         29 |
+| c:\MAMP\htdocs\site\Site\tsconfig.json                       | JSON with Comments |          7 |          0 |          1 |          8 |
+| c:\MAMP\htdocs\site\Site\tsconfig.node.json                  | JSON               |         22 |          2 |          3 |         27 |
+| c:\MAMP\htdocs\site\Site\vercel.json                         | JSON               |          5 |          0 |          0 |          5 |
+| c:\MAMP\htdocs\site\Site\vite.config.ts                      | TypeScript         |          9 |          1 |          1 |         11 |
+| Total                                                        |                    |      6,305 |        343 |        629 |      7,277 |
++--------------------------------------------------------------+--------------------+------------+------------+------------+------------+

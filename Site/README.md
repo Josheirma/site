@@ -1,3 +1,10 @@
+<!-- Ext  Files Lines
+---  ----- -----
+.css    22  1650
+.tsx    21  1413
+.ts      2    10
+ -->
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
