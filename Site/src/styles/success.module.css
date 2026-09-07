@@ -16,11 +16,19 @@
 
 .heading {
   font-size: 1.15rem;
+  margin-bottom: 1rem;
 }
 
 .content {
   max-width: 100%;
   font-size: 1.15rem;
+  margin-bottom: 100rem;
+  
+}
+.licenseKey{
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 600px) {
